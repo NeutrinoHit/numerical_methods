@@ -1,0 +1,30 @@
+---
+title: "Lecture zero: Python, NumPy and Numba"
+description: "The working environment (a virtual environment, Jupyter and Quarto), Python basics, NumPy arrays and vectorization, Matplotlib plots, timing, compiling critical loops with Numba."
+---
+
+::: {.chapter-opening}
+<span>Abstract</span>
+
+The working environment (a virtual environment, Jupyter and Quarto), Python basics, NumPy arrays and vectorization, Matplotlib plots, timing, compiling critical loops with Numba.
+
+Chapter in preparation.
+:::
+
+## Physical problem
+
+## Analytic reference point
+
+## Where analytics ends
+
+## Numerical method
+
+## Accuracy, stability, cost
+
+## Code and experiments
+
+## Pitfalls
+
+## Exercises
+
+{{< include ../../../_includes/exercises/planned/python_numpy_numba-en.qmd >}}

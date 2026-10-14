@@ -1,0 +1,30 @@
+---
+title: "Course exercises"
+subtitle: "Numerical Methods for Physicists"
+author: "Dmitry V. Naumov"
+format:
+  html:
+    toc: false
+---
+
+[← Back to the course](../index.html){.exercise-back-link}
+
+Exercises for the lectures (drafts):
+
+00. Lecture zero: Python, NumPy and Numba — *in preparation*
+01. The pendulum: how a numerical method goes wrong — *in preparation*
+02. Chaos: the double pendulum and the three-body problem — *in preparation*
+03. Coupled oscillators and normal modes — *in preparation*
+04. Electrostatics: the Poisson equation and large linear systems — *in preparation*
+05. Heat conduction and diffusion — *in preparation*
+06. Waves and the telegraph equation — *in preparation*
+07. Fourier analysis: frequencies in a signal and spectral solution of equations — *in preparation*
+08. The Schrödinger equation: energy levels — *in preparation*
+09. Quantum evolution: wave packets, tunnelling, neutrino oscillations — *in preparation*
+10. Cosmology: the expansion of the Universe and «freeze-out» — *in preparation*
+11. Functions on the sphere: multipoles and sky maps — *in preparation*
+12. Inverse problems: the reactor antineutrino spectrum and the SVD — *in preparation*
+13. Hydrodynamics I: conservation laws and shock waves — *in preparation*
+14. Hydrodynamics II: vortices and two-dimensional turbulence — *in preparation*
+15. The transport equation: from Boltzmann to light in water — *in preparation*
+16. Fast computations and verification: from a prototype to production code — *in preparation*

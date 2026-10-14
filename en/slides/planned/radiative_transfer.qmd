@@ -1,0 +1,51 @@
+---
+title: "The transport equation: from Boltzmann to light in water"
+subtitle: "Numerical Methods for Physicists"
+author: "Dmitry V. Naumov"
+format: revealjs
+---
+
+## Lecture outline (draft)
+
+The collision integral, the mean free path, the transport problem. Methods: Monte Carlo (the random walk of a photon), the diffusion approximation, expansion in angular moments (lecture 11). Comparison of cost and accuracy.
+
+- **Problem:** A photon in a turbid medium: ballistics, diffusion (lecture 5), finite speed (lecture 6). The example is light in Lake Baikal and a neutrino telescope.
+- **Tools:** Monte Carlo for transport (sampling free paths and angles), the $1/\sqrt N$ error, the diffusion approximation, $P_N$.
+
+::: {.takeaway}
+Lecture in preparation.
+:::
+
+# Physical problem
+
+## Setting
+
+# Analytic reference point
+
+## What is solved exactly
+
+## Where analytics ends
+
+# Numerical method
+
+## The idea
+
+## Accuracy, stability, cost
+
+# Code and experiments
+
+## Implementation in Python
+
+## Pitfalls
+
+# Sidebar: LightHit
+
+## How it works in LightHit
+
+LightHit is a deterministic (spectral) approach to the same problem.
+
+# Summary
+
+## What we take with us
+
+## Exercises

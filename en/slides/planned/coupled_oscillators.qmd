@@ -1,0 +1,45 @@
+---
+title: "Coupled oscillators and normal modes"
+subtitle: "Numerical Methods for Physicists"
+author: "Dmitry V. Naumov"
+format: revealjs
+---
+
+## Lecture outline (draft)
+
+A chain of $N$ masses: the stiffness matrix, eigenvalues and eigenvectors, the dispersion relation. The limit $N\to\infty$ gives the wave equation.
+
+- **Problem:** A chain of springs, phonons. The reference is the uniform chain, $\omega_k=2\omega_0\sin(ka/2)$; a chain with random masses (mode localization) has no analytic solution.
+- **Tools:** a matrix as an operator, eigenproblems (eigh), tridiagonal matrices, the condition number.
+
+::: {.takeaway}
+Lecture in preparation.
+:::
+
+# Physical problem
+
+## Setting
+
+# Analytic reference point
+
+## What is solved exactly
+
+## Where analytics ends
+
+# Numerical method
+
+## The idea
+
+## Accuracy, stability, cost
+
+# Code and experiments
+
+## Implementation in Python
+
+## Pitfalls
+
+# Summary
+
+## What we take with us
+
+## Exercises

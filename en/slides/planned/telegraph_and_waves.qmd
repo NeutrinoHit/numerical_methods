@@ -1,0 +1,51 @@
+---
+title: "Waves and the telegraph equation"
+subtitle: "Numerical Methods for Physicists"
+author: "Dmitry V. Naumov"
+format: revealjs
+---
+
+## Lecture outline (draft)
+
+The wave equation, the CFL condition, numerical dispersion and dissipation; upwind, Lax–Wendroff and leapfrog schemes. The telegraph equation as a bridge between waves and diffusion.
+
+- **Problem:** A string and a lossy transmission line. The reference is d'Alembert's solution and the Heaviside signal; damping and inhomogeneities change the picture.
+- **Tools:** the method of characteristics, the CFL condition, numerical dispersion, absorbing boundary conditions.
+
+::: {.takeaway}
+Lecture in preparation.
+:::
+
+# Physical problem
+
+## Setting
+
+# Analytic reference point
+
+## What is solved exactly
+
+## Where analytics ends
+
+# Numerical method
+
+## The idea
+
+## Accuracy, stability, cost
+
+# Code and experiments
+
+## Implementation in Python
+
+## Pitfalls
+
+# Sidebar: LightHit
+
+## How it works in LightHit
+
+The P1 approximation of the transport equation leads to the telegraph equation (lecture 15).
+
+# Summary
+
+## What we take with us
+
+## Exercises

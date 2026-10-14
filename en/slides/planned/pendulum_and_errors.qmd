@@ -1,0 +1,45 @@
+---
+title: "The pendulum: how a numerical method goes wrong"
+subtitle: "Numerical Methods for Physicists"
+author: "Dmitry V. Naumov"
+format: revealjs
+---
+
+## Lecture outline (draft)
+
+From Euler to Runge–Kutta and Verlet: order of accuracy, local and global error, stability, energy conservation, the convergence test.
+
+- **Problem:** The simple pendulum. The reference is the exact solution through elliptic integrals and small oscillations; the Euler method «heats» the energy.
+- **Tools:** floating-point numbers and machine precision, order of a method, the convergence test, the Euler, Runge–Kutta and Verlet schemes, symplecticity.
+
+::: {.takeaway}
+Lecture in preparation.
+:::
+
+# Physical problem
+
+## Setting
+
+# Analytic reference point
+
+## What is solved exactly
+
+## Where analytics ends
+
+# Numerical method
+
+## The idea
+
+## Accuracy, stability, cost
+
+# Code and experiments
+
+## Implementation in Python
+
+## Pitfalls
+
+# Summary
+
+## What we take with us
+
+## Exercises

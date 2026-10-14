@@ -1,0 +1,9 @@
+# Python dependencies used by Quarto execution, notebooks and generated figures.
+jupyter>=1.1
+numpy>=2.0
+scipy>=1.13
+matplotlib>=3.8
+sympy>=1.13
+numba>=0.61
+# LightHit подключается как внешний пакет. На рабочей машине:
+#   pip install -e ../LightHit

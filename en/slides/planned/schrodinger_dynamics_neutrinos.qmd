@@ -1,0 +1,45 @@
+---
+title: "Quantum evolution: wave packets, tunnelling, neutrino oscillations"
+subtitle: "Numerical Methods for Physicists"
+author: "Dmitry V. Naumov"
+format: revealjs
+---
+
+## Lecture outline (draft)
+
+Crank–Nicolson (unitarity), operator splitting (split-step) with the FFT, the matrix exponential and expansion in eigenvectors, adiabaticity.
+
+- **Problem:** Tunnelling through a barrier (the reference is the rectangular barrier) and neutrino oscillations in matter: $2\nu$ in constant density is exact, $3\nu$ in variable density only numerical.
+- **Tools:** split-step Fourier, the matrix exponential (expm), unitarity as a test, the adiabatic limit.
+
+::: {.takeaway}
+Lecture in preparation.
+:::
+
+# Physical problem
+
+## Setting
+
+# Analytic reference point
+
+## What is solved exactly
+
+## Where analytics ends
+
+# Numerical method
+
+## The idea
+
+## Accuracy, stability, cost
+
+# Code and experiments
+
+## Implementation in Python
+
+## Pitfalls
+
+# Summary
+
+## What we take with us
+
+## Exercises

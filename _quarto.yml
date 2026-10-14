@@ -1,0 +1,45 @@
+project:
+  type: website
+  output-dir: _site
+  # Только страница курса. Слайды и книги RU/EN — отдельные проекты
+  # в ru/slides, en/slides, ru/book, en/book; см. Makefile.
+  render:
+    - index.qmd
+  resources:
+    - /shared/figures/dvnlogo.png
+
+lang: ru-RU
+
+website:
+  title: "Численные методы для физиков"
+  site-url: "https://neutrinohit.github.io/numerical_methods/"
+  navbar:
+    left:
+      - href: https://neutrinohit.github.io/
+        text: NeutrinoHit
+      - href: https://neutrinohit.github.io/ru/education.html#numerical-methods
+        text: Карта курса
+      - href: index.qmd
+        text: Курс
+      - href: ru/slides/index.html
+        text: Слайды
+      - href: ru/book/index.html
+        text: Книга
+      - href: en/slides/index.html
+        text: EN
+  page-footer:
+    left: "© NeutrinoHit"
+    right: "Built with Quarto"
+
+format:
+  html:
+    theme: cosmo
+    css:
+      - https://neutrinohit.github.io/assets/site/neutrinohit-tokens.css
+      - https://neutrinohit.github.io/assets/site/neutrinohit-base.css
+      - https://neutrinohit.github.io/assets/site/neutrinohit-components.css
+      - https://neutrinohit.github.io/assets/site/neutrinohit-projects.css
+      - styles.css
+    toc: false
+    page-layout: full
+    include-after-body: shared/html/cloudflare-web-analytics.html

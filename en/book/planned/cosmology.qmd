@@ -1,0 +1,30 @@
+---
+title: "Cosmology: the expansion of the Universe and «freeze-out»"
+description: "Only a minimum of cosmology is needed: Hubble's law and the Friedmann equation, which reads as energy conservation (by analogy with lectures 1–2). The age of the Universe and distances through quadratures, root finding, fitting the Hubble diagram. A simple stiff problem: relaxation to equilibrium that the expansion «freezes» — explicit and implicit methods."
+---
+
+::: {.chapter-opening}
+<span>Abstract</span>
+
+Only a minimum of cosmology is needed: Hubble's law and the Friedmann equation, which reads as energy conservation (by analogy with lectures 1–2). The age of the Universe and distances through quadratures, root finding, fitting the Hubble diagram. A simple stiff problem: relaxation to equilibrium that the expansion «freezes» — explicit and implicit methods.
+
+Chapter in preparation.
+:::
+
+## Physical problem
+
+## Analytic reference point
+
+## Where analytics ends
+
+## Numerical method
+
+## Accuracy, stability, cost
+
+## Code and experiments
+
+## Pitfalls
+
+## Exercises
+
+{{< include ../../../_includes/exercises/planned/cosmology-en.qmd >}}

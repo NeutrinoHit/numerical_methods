@@ -1,0 +1,317 @@
+---
+title: "Численные методы для физиков"
+subtitle: "Курс лекций"
+author: "Дмитрий В. Наумов"
+format:
+  html:
+    toc: false
+    page-layout: full
+---
+
+```{=html}
+<style>
+  .quarto-title-block { display: none; }
+</style>
+```
+
+::: {.course-index}
+
+::: {.course-intro .course-intro-primary}
+<p class="course-kicker">Курс лекций · в подготовке</p>
+
+# Численные методы для физиков
+
+Курс о том, как физик решает задачи, которые не берутся аналитически. Лекция — одна физическая задача: маятник и хаос, цепочка осцилляторов, электростатика, теплопроводность, волны, квантовая механика, космология, гидродинамика, перенос излучения. Нужные методы (собственные задачи, разреженные системы, FFT, сферические гармоники, SVD) вводятся тогда, когда задача без них не решается. Язык — Python с Numba.
+
+<div class="lecture-links">
+<a href="https://neutrinohit.github.io/">NeutrinoHit</a>
+<a href="../../index.html">Страница курса</a>
+<a href="../book/index.html">Онлайн-книга</a>
+<a href="exercises/index.html">Все задачи</a>
+<span class="lecture-link-pending">Ноутбуки: готовится</span>
+<span class="lecture-link-pending">Апплеты: готовится</span>
+<span class="lecture-link-pending">Литература: готовится</span>
+</div>
+
+Карточка курса на карте NeutrinoHit: готовится.
+:::
+
+::: {.course-intro}
+Автор курса — Дмитрий В. Наумов, [профиль на NeutrinoHit](https://neutrinohit.github.io/).
+:::
+
+## Лекции курса
+
+::: {.lecture-accordion}
+
+
+<p class="course-kicker">Подготовка</p>
+<details class="lecture-row">
+<summary><span class="lecture-index">00</span><span>Нулевая лекция: Python, NumPy и Numba</span></summary>
+
+<div class="lecture-row-body">
+
+Рабочая среда (виртуальное окружение, Jupyter и Quarto), основы Python, массивы NumPy и векторизация, графики Matplotlib, измерение времени, компиляция критичных циклов с Numba.
+
+**Инструменты:** виртуальное окружение, Jupyter, массивы NumPy, срезы и broadcasting, типы данных и точность, генератор случайных чисел с seed, Matplotlib, `%timeit`, Numba (`@njit`: когда помогает и когда нет).
+
+<div class="lecture-links">
+<span class="lecture-link-pending">готовится</span>
+</div>
+
+</div>
+</details>
+
+<p class="course-kicker">Часть I. Движение и колебания</p>
+<details class="lecture-row">
+<summary><span class="lecture-index">01</span><span>Маятник: как ошибается численный метод</span></summary>
+
+<div class="lecture-row-body">
+
+От метода Эйлера к Рунге–Кутте и Верле: порядок точности, локальная и глобальная ошибка, устойчивость, сохранение энергии, тест сходимости.
+
+**Инструменты:** числа с плавающей точкой и машинная точность, порядок метода, тест сходимости, схемы Эйлера, Рунге–Кутты и Верле, симплектичность.
+
+<div class="lecture-links">
+<span class="lecture-link-pending">готовится</span>
+</div>
+
+</div>
+</details>
+<details class="lecture-row">
+<summary><span class="lecture-index">02</span><span>Хаос: двойной маятник и задача трёх тел</span></summary>
+
+<div class="lecture-row-body">
+
+Адаптивный шаг и контроль ошибки, показатель Ляпунова, сечения Пуанкаре. Почему «точное» численное решение хаотической системы невозможно и что тогда считать результатом.
+
+**Инструменты:** адаптивные методы Рунге–Кутты (solve_ivp), показатель Ляпунова, сечение Пуанкаре, ансамбли траекторий и ускорение на Numba.
+
+<div class="lecture-links">
+<span class="lecture-link-pending">готовится</span>
+</div>
+
+</div>
+</details>
+<details class="lecture-row">
+<summary><span class="lecture-index">03</span><span>Связанные осцилляторы и нормальные моды</span></summary>
+
+<div class="lecture-row-body">
+
+Цепочка из $N$ масс: матрица жёсткости, собственные значения и векторы, дисперсионное соотношение. Предел $N\to\infty$ даёт волновое уравнение.
+
+**Инструменты:** матрица как оператор, собственные задачи (eigh), трёхдиагональные матрицы, число обусловленности.
+
+<div class="lecture-links">
+<span class="lecture-link-pending">готовится</span>
+</div>
+
+</div>
+</details>
+
+<p class="course-kicker">Часть II. Поля, диффузия и волны</p>
+<details class="lecture-row">
+<summary><span class="lecture-index">04</span><span>Электростатика: уравнение Пуассона и большие линейные системы</span></summary>
+
+<div class="lecture-row-body">
+
+Разностная схема превращает уравнение в линейную систему с $N^2$ неизвестными. Прямые (LU, Холецкий) и итерационные (Якоби, Зейдель, сопряжённые градиенты) методы; сколько стоит точность.
+
+**Инструменты:** разреженные матрицы, LU и Холецкий, итерации Якоби, Зейделя и сопряжённых градиентов, число обусловленности, идея многосеточного метода.
+
+<div class="lecture-links">
+<span class="lecture-link-pending">готовится</span>
+</div>
+
+</div>
+</details>
+<details class="lecture-row">
+<summary><span class="lecture-index">05</span><span>Теплопроводность и диффузия</span></summary>
+
+<div class="lecture-row-body">
+
+Явная схема и условие устойчивости, неявная схема и трёхдиагональная прогонка, Кранк–Николсон. Сравнение с функцией Грина; неоднородная и нелинейная среда; случайное блуждание как микроскопическая картина.
+
+**Инструменты:** анализ устойчивости фон Неймана, неявные схемы, метод прогонки, метод прямых, жёсткие системы.
+
+<div class="lecture-links">
+<span class="lecture-link-pending">готовится</span>
+</div>
+
+</div>
+</details>
+<details class="lecture-row">
+<summary><span class="lecture-index">06</span><span>Волны и телеграфное уравнение</span></summary>
+
+<div class="lecture-row-body">
+
+Волновое уравнение, условие Куранта, численная дисперсия и диссипация; схемы upwind, Лакса–Вендроффа и «чехарда». Телеграфное уравнение как мост между волной и диффузией.
+
+**Инструменты:** метод характеристик, условие Куранта, численная дисперсия, поглощающие граничные условия.
+
+<div class="lecture-links">
+<span class="lecture-link-pending">готовится</span>
+</div>
+
+</div>
+</details>
+<details class="lecture-row">
+<summary><span class="lecture-index">07</span><span>Фурье-анализ: частоты в сигнале и спектральное решение уравнений</span></summary>
+
+<div class="lecture-row-body">
+
+ДПФ и FFT, алиасинг, утечка спектра и окна, теорема о свёртке, спектральное дифференцирование и экспоненциальная точность, явление Гиббса.
+
+**Инструменты:** FFT, окна, свёртка через FFT, спектральные производные, антиалиасинг.
+
+<div class="lecture-links">
+<span class="lecture-link-pending">готовится</span>
+</div>
+
+</div>
+</details>
+
+<p class="course-kicker">Часть III. Квантовая механика</p>
+<details class="lecture-row">
+<summary><span class="lecture-index">08</span><span>Уравнение Шрёдингера: уровни энергии</span></summary>
+
+<div class="lecture-row-body">
+
+Гамильтониан как матрица (конечные разности и базис), метод стрельбы и Нумерова, сходимость уровней, вариационный принцип.
+
+**Инструменты:** диагонализация трёхдиагональных матриц, стрельба и поиск корня, метод Нумерова, оценка сходимости уровней.
+
+<div class="lecture-links">
+<span class="lecture-link-pending">готовится</span>
+</div>
+
+</div>
+</details>
+<details class="lecture-row">
+<summary><span class="lecture-index">09</span><span>Квантовая эволюция: пакеты, туннелирование, осцилляции нейтрино</span></summary>
+
+<div class="lecture-row-body">
+
+Кранк–Николсон (унитарность), расщепление оператора (split-step) с FFT, матричная экспонента и разложение по собственным векторам, адиабатичность.
+
+**Инструменты:** split-step Фурье, матричная экспонента (expm), унитарность как тест, адиабатический предел.
+
+<div class="lecture-links">
+<span class="lecture-link-pending">готовится</span>
+</div>
+
+</div>
+</details>
+
+<p class="course-kicker">Часть IV. Космос и данные</p>
+<details class="lecture-row">
+<summary><span class="lecture-index">10</span><span>Космология: расширение Вселенной и «замораживание»</span></summary>
+
+<div class="lecture-row-body">
+
+Из космологии нужен минимум: закон Хаббла и уравнение Фридмана, которое читается как закон сохранения энергии (по аналогии с лекциями 1–2). Возраст Вселенной и расстояния через квадратуры, поиск корней, подгонка диаграммы Хаббла. Простая жёсткая задача: релаксация к равновесию, которую расширение «замораживает», — явный и неявный методы.
+
+**Инструменты:** численное интегрирование (прямоугольники, трапеции, Симпсон, Гаусс) и порядок сходимости, поиск корней (бисекция, Ньютон), подгонка `curve_fit`, жёсткость и неявный метод Эйлера.
+
+<div class="lecture-links">
+<span class="lecture-link-pending">готовится</span>
+</div>
+
+</div>
+</details>
+<details class="lecture-row">
+<summary><span class="lecture-index">11</span><span>Функции на сфере: мультиполи и карты неба</span></summary>
+
+<div class="lecture-row-body">
+
+Полиномы Лежандра и сферические гармоники, теорема сложения, квадратуры Гаусса–Лежандра по $\cos\theta$, разложение карты на сфере и спектр мощности $C_\ell$. Узлы Гаусса как задача на собственные значения (лекция 3).
+
+**Инструменты:** $Y_{\ell m}$, квадратуры Гаусса–Лежандра, устойчивость рекуррентных соотношений, разложение и синтез карты.
+
+<div class="lecture-links">
+<span class="lecture-link-pending">готовится</span>
+</div>
+
+</div>
+</details>
+<details class="lecture-row">
+<summary><span class="lecture-index">12</span><span>Обратные задачи: спектр реакторных антинейтрино и SVD</span></summary>
+
+<div class="lecture-row-body">
+
+Сингулярное разложение, число обусловленности, псевдообратная матрица, усечённое SVD и регуляризация Тихонова, лучшее приближение малого ранга. Свёртка с разрешением детектора и её обращение через FFT (лекция 7).
+
+**Инструменты:** SVD, псевдообращение, регуляризация, малый ранг; разложение Холецкого для генерации коррелированных ошибок (связь с курсом статистики).
+
+<div class="lecture-links">
+<span class="lecture-link-pending">готовится</span>
+</div>
+
+</div>
+</details>
+
+<p class="course-kicker">Часть V. Течения, перенос и большие расчёты</p>
+<details class="lecture-row">
+<summary><span class="lecture-index">13</span><span>Гидродинамика I: законы сохранения и ударные волны</span></summary>
+
+<div class="lecture-row-body">
+
+Консервативная форма, метод конечных объёмов, потоки Лакса–Фридрихса и Годунова, численная вязкость, ограничители потока (TVD), условие Куранта.
+
+**Инструменты:** консервативные схемы, конечные объёмы, задача Римана, ограничители потока.
+
+<div class="lecture-links">
+<span class="lecture-link-pending">готовится</span>
+</div>
+
+</div>
+</details>
+<details class="lecture-row">
+<summary><span class="lecture-index">14</span><span>Гидродинамика II: вихри и двумерная турбулентность</span></summary>
+
+<div class="lecture-row-body">
+
+Уравнение завихренности и функция тока, решение уравнения Пуассона через FFT, псевдоспектральный метод и антиалиасинг, число Рейнольдса и разрешение сетки, ускорение на Numba.
+
+**Инструменты:** псевдоспектральный метод, правило 2/3, интегрирование по времени, повторное использование Пуассона и FFT из лекций 4 и 7.
+
+<div class="lecture-links">
+<span class="lecture-link-pending">готовится</span>
+</div>
+
+</div>
+</details>
+<details class="lecture-row">
+<summary><span class="lecture-index">15</span><span>Уравнение переноса: от Больцмана к свету в воде</span></summary>
+
+<div class="lecture-row-body">
+
+Интеграл столкновений, длина свободного пробега, постановка задачи переноса. Методы: Монте-Карло (случайное блуждание фотона), диффузионное приближение, разложение по угловым моментам (лекция 11). Сравнение стоимости и точности.
+
+**Инструменты:** Монте-Карло для переноса (выборка длины пробега и угла), ошибка $1/\sqrt N$, диффузионное приближение, $P_N$.
+
+<div class="lecture-links">
+<span class="lecture-link-pending">готовится</span>
+</div>
+
+</div>
+</details>
+<details class="lecture-row">
+<summary><span class="lecture-index">16</span><span>Быстрые расчёты и проверка: от прототипа к рабочему коду</span></summary>
+
+<div class="lecture-row-body">
+
+Профилирование, векторизация и Numba, повторное использование вычислений (кэш, малый ранг из лекции 12), тесты на аналитических пределах, метод изготовленных решений, бюджет ошибок.
+
+**Инструменты:** профилирование, Numba (njit, parallel, риски fastmath), кэширование, регрессионные и сходимостные тесты.
+
+<div class="lecture-links">
+<span class="lecture-link-pending">готовится</span>
+</div>
+
+</div>
+</details>
+
+:::
+
+:::

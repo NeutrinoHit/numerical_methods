@@ -1,0 +1,45 @@
+---
+title: "Fourier analysis: frequencies in a signal and spectral solution of equations"
+subtitle: "Numerical Methods for Physicists"
+author: "Dmitry V. Naumov"
+format: revealjs
+---
+
+## Lecture outline (draft)
+
+The DFT and FFT, aliasing, spectral leakage and windows, the convolution theorem, spectral differentiation and exponential accuracy, the Gibbs phenomenon.
+
+- **Problem:** Find periods in a noisy signal; solve diffusion and waves in Fourier space. The reference is known harmonics and exact solutions with periodic boundary conditions.
+- **Tools:** the FFT, windows, convolution via the FFT, spectral derivatives, dealiasing.
+
+::: {.takeaway}
+Lecture in preparation.
+:::
+
+# Physical problem
+
+## Setting
+
+# Analytic reference point
+
+## What is solved exactly
+
+## Where analytics ends
+
+# Numerical method
+
+## The idea
+
+## Accuracy, stability, cost
+
+# Code and experiments
+
+## Implementation in Python
+
+## Pitfalls
+
+# Summary
+
+## What we take with us
+
+## Exercises

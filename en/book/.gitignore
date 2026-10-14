@@ -1,0 +1,7 @@
+/.quarto/
+/_book/
+**/*.quarto_ipynb*
+/*_files/
+.DS_Store
+
+**/*.quarto_ipynb

@@ -1,0 +1,3 @@
+# Preface {.unnumbered}
+
+Draft. A physics student usually can solve equations on paper but is less familiar with what a computer actually does: matrix factorizations (LU, Cholesky, SVD), the fast Fourier transform, spherical harmonics and quadratures. The book is built around problems of theoretical physics, some of which have no analytic solution but are solved efficiently numerically. Each method is introduced on the problem that requires it. Examples from neutrino-experiment practice, in particular the LightHit package for light transport, appear where they are relevant.

@@ -1,0 +1,51 @@
+---
+title: "Fast computations and verification: from a prototype to production code"
+subtitle: "Numerical Methods for Physicists"
+author: "Dmitry V. Naumov"
+format: revealjs
+---
+
+## Lecture outline (draft)
+
+Profiling, vectorization and Numba, reuse of computations (caching, low rank from lecture 12), tests on analytic limits, the method of manufactured solutions, error budgets.
+
+- **Problem:** How to make sure that a fast calculation gives the right answer, and what the speed-up costs.
+- **Tools:** profiling, Numba (njit, parallel, the risks of fastmath), caching, regression and convergence tests.
+
+::: {.takeaway}
+Lecture in preparation.
+:::
+
+# Physical problem
+
+## Setting
+
+# Analytic reference point
+
+## What is solved exactly
+
+## Where analytics ends
+
+# Numerical method
+
+## The idea
+
+## Accuracy, stability, cost
+
+# Code and experiments
+
+## Implementation in Python
+
+## Pitfalls
+
+# Sidebar: LightHit
+
+## How it works in LightHit
+
+A walk through LightHit: the shower POD basis, the precomputation cache, Numba acceleration, comparison with references.
+
+# Summary
+
+## What we take with us
+
+## Exercises

@@ -1,0 +1,30 @@
+---
+title: "Fourier analysis: frequencies in a signal and spectral solution of equations"
+description: "The DFT and FFT, aliasing, spectral leakage and windows, the convolution theorem, spectral differentiation and exponential accuracy, the Gibbs phenomenon."
+---
+
+::: {.chapter-opening}
+<span>Abstract</span>
+
+The DFT and FFT, aliasing, spectral leakage and windows, the convolution theorem, spectral differentiation and exponential accuracy, the Gibbs phenomenon.
+
+Chapter in preparation.
+:::
+
+## Physical problem
+
+## Analytic reference point
+
+## Where analytics ends
+
+## Numerical method
+
+## Accuracy, stability, cost
+
+## Code and experiments
+
+## Pitfalls
+
+## Exercises
+
+{{< include ../../../_includes/exercises/planned/fourier_and_fft-en.qmd >}}

@@ -1,0 +1,30 @@
+---
+title: "Quantum evolution: wave packets, tunnelling, neutrino oscillations"
+description: "Crank–Nicolson (unitarity), operator splitting (split-step) with the FFT, the matrix exponential and expansion in eigenvectors, adiabaticity."
+---
+
+::: {.chapter-opening}
+<span>Abstract</span>
+
+Crank–Nicolson (unitarity), operator splitting (split-step) with the FFT, the matrix exponential and expansion in eigenvectors, adiabaticity.
+
+Chapter in preparation.
+:::
+
+## Physical problem
+
+## Analytic reference point
+
+## Where analytics ends
+
+## Numerical method
+
+## Accuracy, stability, cost
+
+## Code and experiments
+
+## Pitfalls
+
+## Exercises
+
+{{< include ../../../_includes/exercises/planned/schrodinger_dynamics_neutrinos-en.qmd >}}

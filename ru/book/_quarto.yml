@@ -1,0 +1,118 @@
+project:
+  type: book
+  output-dir: ../../_site/ru/book
+
+book:
+  title: "Численные методы для физиков"
+  output-file: numerical-methods
+  subtitle: "Метод, проверка, физический результат"
+  author: "Дмитрий В. Наумов"
+  repo-subdir: "ru/book"
+  search: true
+  reader-mode: true
+  downloads: [pdf]
+  page-footer:
+    left: "© Дмитрий В. Наумов"
+    right: "NeutrinoHit · Численные методы"
+  chapters:
+    - index.qmd
+    - preface.qmd
+    # Главы добавляются по мере готовности: файл переносится из planned/ с номером
+    # (номер совпадает с номером лекции) и вставляется в часть, например:
+    #   - part: "Подготовка"
+    #     chapters:
+    #       - chapters/00_python_numpy_numba.qmd
+    #   - part: "I. Движение и колебания"
+    #     chapters:
+    #       - chapters/01_pendulum_and_errors.qmd
+    #       - chapters/02_chaos_double_pendulum.qmd
+    #       - chapters/03_coupled_oscillators.qmd
+    #   - part: "II. Поля, диффузия и волны"
+    #     chapters:
+    #       - chapters/04_electrostatics_poisson.qmd
+    #       - chapters/05_heat_equation.qmd
+    #       - chapters/06_telegraph_and_waves.qmd
+    #       - chapters/07_fourier_and_fft.qmd
+    #   - part: "III. Квантовая механика"
+    #     chapters:
+    #       - chapters/08_schrodinger_stationary.qmd
+    #       - chapters/09_schrodinger_dynamics_neutrinos.qmd
+    #   - part: "IV. Космос и данные"
+    #     chapters:
+    #       - chapters/10_cosmology.qmd
+    #       - chapters/11_sphere_and_multipoles.qmd
+    #       - chapters/12_inverse_problems_svd.qmd
+    #   - part: "V. Течения, перенос и большие расчёты"
+    #     chapters:
+    #       - chapters/13_hydrodynamics_shocks.qmd
+    #       - chapters/14_hydrodynamics_vortices.qmd
+    #       - chapters/15_radiative_transfer.qmd
+    #       - chapters/16_fast_codes_and_verification.qmd
+
+bibliography: ../../shared/bib/references.bib
+csl: ../../shared/bib/neutrinohit-numeric.csl
+# Как в stat-course: у каждой главы свой список источников (chapter-bibliographies.lua).
+citeproc: false
+link-citations: false
+lang: ru
+jupyter: python3
+
+book-part-titles:
+  - "Подготовка"
+  - "I. Движение и колебания"
+  - "II. Поля, диффузия и волны"
+  - "III. Квантовая механика"
+  - "IV. Космос и данные"
+  - "V. Течения, перенос и большие расчёты"
+
+filters:
+  - assets/filters/chapter-bibliographies.lua
+  - assets/filters/hide-book-index.lua
+  - assets/filters/neutrinohit-book.lua
+
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    grid:
+      sidebar-width: 260px
+      body-width: 1050px
+      margin-width: 230px
+      gutter-width: 1rem
+    css:
+      - assets/styles/neutrinohit-book.css
+      - assets/styles/book.css
+    include-in-header:
+      - ../../shared/html/mathjax.html
+    include-after-body: ../../shared/html/cloudflare-web-analytics.html
+    theme: cosmo
+    code-copy: true
+    anchor-sections: true
+    smooth-scroll: true
+    link-external-newwindow: true
+    fig-responsive: true
+  pdf:
+    documentclass: scrbook
+    classoption:
+      - open=any
+    papersize: a4
+    fontsize: 11pt
+    toc: true
+    toc-depth: 2
+    toc-title: "Содержание"
+    number-sections: true
+    number-depth: 3
+    colorlinks: true
+    pdf-engine: lualatex
+    keep-tex: true
+    include-in-header:
+      - ../../shared/latex/neutrinohit-book.tex
+      - ../../shared/latex/ru-lang.tex
+  epub:
+    toc: true
+    toc-depth: 2
+    number-sections: true
+    css:
+      - assets/styles/neutrinohit-book.css
+      - assets/styles/book.css

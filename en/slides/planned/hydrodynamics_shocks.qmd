@@ -1,0 +1,45 @@
+---
+title: "Hydrodynamics I: conservation laws and shock waves"
+subtitle: "Numerical Methods for Physicists"
+author: "Dmitry V. Naumov"
+format: revealjs
+---
+
+## Lecture outline (draft)
+
+Conservative form, the finite-volume method, Lax–Friedrichs and Godunov fluxes, numerical viscosity, flux limiters (TVD), the CFL condition.
+
+- **Problem:** The Burgers equation (the reference is the Hopf–Cole solution) and the Sod shock tube for the Euler equations (the reference is the exact Riemann solution); shocks and discontinuities.
+- **Tools:** conservative schemes, finite volumes, the Riemann problem, flux limiters.
+
+::: {.takeaway}
+Lecture in preparation.
+:::
+
+# Physical problem
+
+## Setting
+
+# Analytic reference point
+
+## What is solved exactly
+
+## Where analytics ends
+
+# Numerical method
+
+## The idea
+
+## Accuracy, stability, cost
+
+# Code and experiments
+
+## Implementation in Python
+
+## Pitfalls
+
+# Summary
+
+## What we take with us
+
+## Exercises

@@ -1,0 +1,31 @@
+/*
+ * Локальные стили книги «Численные методы для физиков».
+ * Общая основа — neutrinohit-book.css (канонический источник:
+ * neutrinohit-map/assets/books/). Здесь — только предметные правила.
+ */
+
+.chapter-opening {
+  margin: 1rem 0 2.2rem;
+  padding: 1.5rem 1.6rem;
+  border: 1px solid var(--book-line);
+  border-left: 5px solid var(--book-coral);
+  border-radius: 6px;
+  background: var(--book-coral-soft);
+  box-shadow: none;
+  font-size: 1.12rem;
+}
+
+.chapter-opening p:last-child {
+  margin-bottom: 0;
+}
+
+.chapter-opening span {
+  display: block;
+  margin-bottom: 0.45rem;
+  color: var(--book-coral);
+  font-family: var(--book-sans);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}

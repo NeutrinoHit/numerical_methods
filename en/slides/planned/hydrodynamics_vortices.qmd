@@ -1,0 +1,45 @@
+---
+title: "Hydrodynamics II: vortices and two-dimensional turbulence"
+subtitle: "Numerical Methods for Physicists"
+author: "Dmitry V. Naumov"
+format: revealjs
+---
+
+## Lecture outline (draft)
+
+The vorticity equation and the stream function, solving the Poisson equation with the FFT, the pseudo-spectral method and dealiasing, the Reynolds number and grid resolution, acceleration with Numba.
+
+- **Problem:** Flow of an incompressible fluid: the Taylor–Green vortex (the reference), the Kelvin–Helmholtz instability, two-dimensional turbulence.
+- **Tools:** the pseudo-spectral method, the 2/3 rule, time integration, reuse of the Poisson solver and FFT from lectures 4 and 7.
+
+::: {.takeaway}
+Lecture in preparation.
+:::
+
+# Physical problem
+
+## Setting
+
+# Analytic reference point
+
+## What is solved exactly
+
+## Where analytics ends
+
+# Numerical method
+
+## The idea
+
+## Accuracy, stability, cost
+
+# Code and experiments
+
+## Implementation in Python
+
+## Pitfalls
+
+# Summary
+
+## What we take with us
+
+## Exercises

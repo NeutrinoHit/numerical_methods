@@ -1,0 +1,44 @@
+project:
+  type: website
+  output-dir: ../../_site/en/slides
+  resources:
+    - shared/figures/**
+    - shared/reveal/**
+  render:
+    - index.qmd
+    - exercises/index.qmd
+    # Лекции добавляются по мере готовности: файл переносится из planned/ с номером,
+    # затем указывается здесь. Пример:
+    # - NN_python_numpy_numba.qmd
+    # - NN_pendulum_and_errors.qmd
+    # ... (см. docs/PLAN.md)
+
+lang: en
+
+website:
+  title: "Numerical Methods for Physicists: slides"
+
+format:
+  html:
+    theme: flatly
+    css: styles.css
+    toc: false
+    page-layout: full
+    include-after-body: shared/html/cloudflare-web-analytics.html
+  revealjs:
+    theme: [black, shared/styles/neutrinohit-reveal.scss]
+    css: styles.css
+    width: 1600
+    height: 900
+    margin: 0.03
+    toc: false
+    slide-number: true
+    preview-links: auto
+    transition: fade
+    center: true
+    logo: shared/figures/dvnlogo.png
+    html-math-method: mathjax
+    include-after-body:
+      - text: |
+          <script data-external="1" data-context-home="https://neutrinohit.github.io/numerical_methods/" data-context-home-label="Course home" src="shared/reveal/neutrinohit-reveal-footer.js"></script>
+      - shared/html/cloudflare-web-analytics.html

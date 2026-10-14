@@ -1,0 +1,118 @@
+project:
+  type: book
+  output-dir: ../../_site/en/book
+
+book:
+  title: "Numerical Methods for Physicists"
+  output-file: numerical-methods
+  subtitle: "Method, check, physical result"
+  author: "Dmitry V. Naumov"
+  repo-subdir: "en/book"
+  search: true
+  reader-mode: true
+  downloads: [pdf]
+  page-footer:
+    left: "© Dmitry V. Naumov"
+    right: "NeutrinoHit · Numerical Methods"
+  chapters:
+    - index.qmd
+    - preface.qmd
+    # Главы добавляются по мере готовности: файл переносится из planned/ с номером
+    # (номер совпадает с номером лекции) и вставляется в часть, например:
+    #   - part: "Preparation"
+    #     chapters:
+    #       - chapters/00_python_numpy_numba.qmd
+    #   - part: "I. Motion and oscillations"
+    #     chapters:
+    #       - chapters/01_pendulum_and_errors.qmd
+    #       - chapters/02_chaos_double_pendulum.qmd
+    #       - chapters/03_coupled_oscillators.qmd
+    #   - part: "II. Fields, diffusion and waves"
+    #     chapters:
+    #       - chapters/04_electrostatics_poisson.qmd
+    #       - chapters/05_heat_equation.qmd
+    #       - chapters/06_telegraph_and_waves.qmd
+    #       - chapters/07_fourier_and_fft.qmd
+    #   - part: "III. Quantum mechanics"
+    #     chapters:
+    #       - chapters/08_schrodinger_stationary.qmd
+    #       - chapters/09_schrodinger_dynamics_neutrinos.qmd
+    #   - part: "IV. The Universe and data"
+    #     chapters:
+    #       - chapters/10_cosmology.qmd
+    #       - chapters/11_sphere_and_multipoles.qmd
+    #       - chapters/12_inverse_problems_svd.qmd
+    #   - part: "V. Flows, transport and large computations"
+    #     chapters:
+    #       - chapters/13_hydrodynamics_shocks.qmd
+    #       - chapters/14_hydrodynamics_vortices.qmd
+    #       - chapters/15_radiative_transfer.qmd
+    #       - chapters/16_fast_codes_and_verification.qmd
+
+bibliography: ../../shared/bib/references.bib
+csl: ../../shared/bib/neutrinohit-numeric.csl
+# Как в stat-course: у каждой главы свой список источников (chapter-bibliographies.lua).
+citeproc: false
+link-citations: false
+lang: en
+jupyter: python3
+
+book-part-titles:
+  - "Preparation"
+  - "I. Motion and oscillations"
+  - "II. Fields, diffusion and waves"
+  - "III. Quantum mechanics"
+  - "IV. The Universe and data"
+  - "V. Flows, transport and large computations"
+
+filters:
+  - assets/filters/chapter-bibliographies.lua
+  - assets/filters/hide-book-index.lua
+  - assets/filters/neutrinohit-book.lua
+
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    grid:
+      sidebar-width: 260px
+      body-width: 1050px
+      margin-width: 230px
+      gutter-width: 1rem
+    css:
+      - assets/styles/neutrinohit-book.css
+      - assets/styles/book.css
+    include-in-header:
+      - ../../shared/html/mathjax.html
+    include-after-body: ../../shared/html/cloudflare-web-analytics.html
+    theme: cosmo
+    code-copy: true
+    anchor-sections: true
+    smooth-scroll: true
+    link-external-newwindow: true
+    fig-responsive: true
+  pdf:
+    documentclass: scrbook
+    classoption:
+      - open=any
+    papersize: a4
+    fontsize: 11pt
+    toc: true
+    toc-depth: 2
+    toc-title: "Contents"
+    number-sections: true
+    number-depth: 3
+    colorlinks: true
+    pdf-engine: lualatex
+    keep-tex: true
+    include-in-header:
+      - ../../shared/latex/neutrinohit-book.tex
+      - ../../shared/latex/en-lang.tex
+  epub:
+    toc: true
+    toc-depth: 2
+    number-sections: true
+    css:
+      - assets/styles/neutrinohit-book.css
+      - assets/styles/book.css

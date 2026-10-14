@@ -1,0 +1,51 @@
+---
+title: "Heat conduction and diffusion"
+subtitle: "Numerical Methods for Physicists"
+author: "Dmitry V. Naumov"
+format: revealjs
+---
+
+## Lecture outline (draft)
+
+The explicit scheme and its stability condition, the implicit scheme and tridiagonal solver, Crank–Nicolson. Comparison with the Green function; inhomogeneous and nonlinear media; the random walk as the microscopic picture.
+
+- **Problem:** Cooling of a rod and spreading of heat. The reference is the Green function and Fourier series; nonlinear conduction and inhomogeneous media have no analytic solution.
+- **Tools:** von Neumann stability analysis, implicit schemes, the tridiagonal (Thomas) algorithm, the method of lines, stiff systems.
+
+::: {.takeaway}
+Lecture in preparation.
+:::
+
+# Physical problem
+
+## Setting
+
+# Analytic reference point
+
+## What is solved exactly
+
+## Where analytics ends
+
+# Numerical method
+
+## The idea
+
+## Accuracy, stability, cost
+
+# Code and experiments
+
+## Implementation in Python
+
+## Pitfalls
+
+# Sidebar: LightHit
+
+## How it works in LightHit
+
+Diffusion is the limit of photon transport in a turbid medium (lecture 15).
+
+# Summary
+
+## What we take with us
+
+## Exercises

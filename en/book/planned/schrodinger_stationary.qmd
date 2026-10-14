@@ -1,0 +1,30 @@
+---
+title: "The Schrödinger equation: energy levels"
+description: "The Hamiltonian as a matrix (finite differences and a basis), shooting and the Numerov method, convergence of levels, the variational principle."
+---
+
+::: {.chapter-opening}
+<span>Abstract</span>
+
+The Hamiltonian as a matrix (finite differences and a basis), shooting and the Numerov method, convergence of levels, the variational principle.
+
+Chapter in preparation.
+:::
+
+## Physical problem
+
+## Analytic reference point
+
+## Where analytics ends
+
+## Numerical method
+
+## Accuracy, stability, cost
+
+## Code and experiments
+
+## Pitfalls
+
+## Exercises
+
+{{< include ../../../_includes/exercises/planned/schrodinger_stationary-en.qmd >}}

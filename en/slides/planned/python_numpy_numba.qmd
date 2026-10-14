@@ -1,0 +1,45 @@
+---
+title: "Lecture zero: Python, NumPy and Numba"
+subtitle: "Numerical Methods for Physicists"
+author: "Dmitry V. Naumov"
+format: revealjs
+---
+
+## Lecture outline (draft)
+
+The working environment (a virtual environment, Jupyter and Quarto), Python basics, NumPy arrays and vectorization, Matplotlib plots, timing, compiling critical loops with Numba.
+
+- **Problem:** The random walk of a particle and a Monte Carlo estimate of $\pi$: simple problems that show the difference between a Python loop, NumPy and Numba. The reference is $\langle x^2\rangle=N$ and the exact value of $\pi$.
+- **Tools:** a virtual environment, Jupyter, NumPy arrays, slicing and broadcasting, data types and precision, a seeded random number generator, Matplotlib, `%timeit`, Numba (`@njit`: when it helps and when it does not).
+
+::: {.takeaway}
+Lecture in preparation.
+:::
+
+# Physical problem
+
+## Setting
+
+# Analytic reference point
+
+## What is solved exactly
+
+## Where analytics ends
+
+# Numerical method
+
+## The idea
+
+## Accuracy, stability, cost
+
+# Code and experiments
+
+## Implementation in Python
+
+## Pitfalls
+
+# Summary
+
+## What we take with us
+
+## Exercises

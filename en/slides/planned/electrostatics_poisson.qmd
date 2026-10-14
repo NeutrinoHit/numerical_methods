@@ -1,0 +1,45 @@
+---
+title: "Electrostatics: the Poisson equation and large linear systems"
+subtitle: "Numerical Methods for Physicists"
+author: "Dmitry V. Naumov"
+format: revealjs
+---
+
+## Lecture outline (draft)
+
+A finite-difference scheme turns the equation into a linear system with $N^2$ unknowns. Direct (LU, Cholesky) and iterative (Jacobi, Seidel, conjugate gradients) methods; what accuracy costs.
+
+- **Problem:** The potential of charged conductors in a box. The reference is the parallel-plate capacitor and the Fourier series for a rectangle; a complicated geometry has no analytic solution.
+- **Tools:** sparse matrices, LU and Cholesky, Jacobi, Seidel and conjugate-gradient iterations, the condition number, the idea of the multigrid method.
+
+::: {.takeaway}
+Lecture in preparation.
+:::
+
+# Physical problem
+
+## Setting
+
+# Analytic reference point
+
+## What is solved exactly
+
+## Where analytics ends
+
+# Numerical method
+
+## The idea
+
+## Accuracy, stability, cost
+
+# Code and experiments
+
+## Implementation in Python
+
+## Pitfalls
+
+# Summary
+
+## What we take with us
+
+## Exercises

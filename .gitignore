@@ -1,0 +1,32 @@
+# Quarto
+.quarto/
+/_site/
+/_book/
+*_files/
+**/*.quarto_ipynb*
+/_freeze/
+.ipynb_checkpoints/
+
+# Local build/cache
+.make-tmp/
+Makefile.local
+__pycache__/
+*.pyc
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+.venv/
+
+# Generated figures (keep the directory)
+shared/figures/generated/*
+!shared/figures/generated/.gitkeep
+
+.DS_Store
+
+# Local working files
+/.work/
+
+/.quarto/
+**/*.quarto_ipynb

@@ -1,0 +1,30 @@
+---
+title: "The pendulum: how a numerical method goes wrong"
+description: "From Euler to Runge–Kutta and Verlet: order of accuracy, local and global error, stability, energy conservation, the convergence test."
+---
+
+::: {.chapter-opening}
+<span>Abstract</span>
+
+From Euler to Runge–Kutta and Verlet: order of accuracy, local and global error, stability, energy conservation, the convergence test.
+
+Chapter in preparation.
+:::
+
+## Physical problem
+
+## Analytic reference point
+
+## Where analytics ends
+
+## Numerical method
+
+## Accuracy, stability, cost
+
+## Code and experiments
+
+## Pitfalls
+
+## Exercises
+
+{{< include ../../../_includes/exercises/planned/pendulum_and_errors-en.qmd >}}

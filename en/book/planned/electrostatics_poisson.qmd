@@ -1,0 +1,30 @@
+---
+title: "Electrostatics: the Poisson equation and large linear systems"
+description: "A finite-difference scheme turns the equation into a linear system with $N^2$ unknowns. Direct (LU, Cholesky) and iterative (Jacobi, Seidel, conjugate gradients) methods; what accuracy costs."
+---
+
+::: {.chapter-opening}
+<span>Abstract</span>
+
+A finite-difference scheme turns the equation into a linear system with $N^2$ unknowns. Direct (LU, Cholesky) and iterative (Jacobi, Seidel, conjugate gradients) methods; what accuracy costs.
+
+Chapter in preparation.
+:::
+
+## Physical problem
+
+## Analytic reference point
+
+## Where analytics ends
+
+## Numerical method
+
+## Accuracy, stability, cost
+
+## Code and experiments
+
+## Pitfalls
+
+## Exercises
+
+{{< include ../../../_includes/exercises/planned/electrostatics_poisson-en.qmd >}}

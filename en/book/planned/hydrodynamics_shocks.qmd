@@ -1,0 +1,30 @@
+---
+title: "Hydrodynamics I: conservation laws and shock waves"
+description: "Conservative form, the finite-volume method, Lax–Friedrichs and Godunov fluxes, numerical viscosity, flux limiters (TVD), the CFL condition."
+---
+
+::: {.chapter-opening}
+<span>Abstract</span>
+
+Conservative form, the finite-volume method, Lax–Friedrichs and Godunov fluxes, numerical viscosity, flux limiters (TVD), the CFL condition.
+
+Chapter in preparation.
+:::
+
+## Physical problem
+
+## Analytic reference point
+
+## Where analytics ends
+
+## Numerical method
+
+## Accuracy, stability, cost
+
+## Code and experiments
+
+## Pitfalls
+
+## Exercises
+
+{{< include ../../../_includes/exercises/planned/hydrodynamics_shocks-en.qmd >}}

@@ -1,0 +1,34 @@
+---
+title: "Fast computations and verification: from a prototype to production code"
+description: "Profiling, vectorization and Numba, reuse of computations (caching, low rank from lecture 12), tests on analytic limits, the method of manufactured solutions, error budgets."
+---
+
+::: {.chapter-opening}
+<span>Abstract</span>
+
+Profiling, vectorization and Numba, reuse of computations (caching, low rank from lecture 12), tests on analytic limits, the method of manufactured solutions, error budgets.
+
+Chapter in preparation.
+:::
+
+## Physical problem
+
+## Analytic reference point
+
+## Where analytics ends
+
+## Numerical method
+
+## Accuracy, stability, cost
+
+## Code and experiments
+
+## Pitfalls
+
+## Sidebar: LightHit
+
+A walk through LightHit: the shower POD basis, the precomputation cache, Numba acceleration, comparison with references.
+
+## Exercises
+
+{{< include ../../../_includes/exercises/planned/fast_codes_and_verification-en.qmd >}}

@@ -1,0 +1,30 @@
+---
+title: "Coupled oscillators and normal modes"
+description: "A chain of $N$ masses: the stiffness matrix, eigenvalues and eigenvectors, the dispersion relation. The limit $N\\to\\infty$ gives the wave equation."
+---
+
+::: {.chapter-opening}
+<span>Abstract</span>
+
+A chain of $N$ masses: the stiffness matrix, eigenvalues and eigenvectors, the dispersion relation. The limit $N\to\infty$ gives the wave equation.
+
+Chapter in preparation.
+:::
+
+## Physical problem
+
+## Analytic reference point
+
+## Where analytics ends
+
+## Numerical method
+
+## Accuracy, stability, cost
+
+## Code and experiments
+
+## Pitfalls
+
+## Exercises
+
+{{< include ../../../_includes/exercises/planned/coupled_oscillators-en.qmd >}}

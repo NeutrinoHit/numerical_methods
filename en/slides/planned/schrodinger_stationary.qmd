@@ -1,0 +1,45 @@
+---
+title: "The Schrödinger equation: energy levels"
+subtitle: "Numerical Methods for Physicists"
+author: "Dmitry V. Naumov"
+format: revealjs
+---
+
+## Lecture outline (draft)
+
+The Hamiltonian as a matrix (finite differences and a basis), shooting and the Numerov method, convergence of levels, the variational principle.
+
+- **Problem:** A well and an oscillator (the reference is the exact levels), an anharmonic oscillator and a double well (no analytic solution), the radial equation of the hydrogen atom.
+- **Tools:** diagonalization of tridiagonal matrices, shooting and root finding, the Numerov method, convergence of levels.
+
+::: {.takeaway}
+Lecture in preparation.
+:::
+
+# Physical problem
+
+## Setting
+
+# Analytic reference point
+
+## What is solved exactly
+
+## Where analytics ends
+
+# Numerical method
+
+## The idea
+
+## Accuracy, stability, cost
+
+# Code and experiments
+
+## Implementation in Python
+
+## Pitfalls
+
+# Summary
+
+## What we take with us
+
+## Exercises

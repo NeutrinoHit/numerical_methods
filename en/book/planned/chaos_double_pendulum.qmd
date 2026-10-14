@@ -1,0 +1,30 @@
+---
+title: "Chaos: the double pendulum and the three-body problem"
+description: "Adaptive step size and error control, the Lyapunov exponent, Poincaré sections. Why an «exact» numerical solution of a chaotic system is impossible and what then counts as a result."
+---
+
+::: {.chapter-opening}
+<span>Abstract</span>
+
+Adaptive step size and error control, the Lyapunov exponent, Poincaré sections. Why an «exact» numerical solution of a chaotic system is impossible and what then counts as a result.
+
+Chapter in preparation.
+:::
+
+## Physical problem
+
+## Analytic reference point
+
+## Where analytics ends
+
+## Numerical method
+
+## Accuracy, stability, cost
+
+## Code and experiments
+
+## Pitfalls
+
+## Exercises
+
+{{< include ../../../_includes/exercises/planned/chaos_double_pendulum-en.qmd >}}

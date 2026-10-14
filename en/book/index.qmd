@@ -1,0 +1,51 @@
+---
+page-layout: article
+format:
+  html:
+    toc: false
+    number-sections: false
+---
+
+# Numerical Methods for Physicists {.unnumbered}
+
+*Online book · in preparation*
+
+The online book accompanying the course. Each chapter goes from a physical problem to an analytic limit, then to a numerical method, an estimate of its accuracy and a check against a known solution. Methods are introduced as the problems demand them.
+
+## Structure of the book {.unnumbered}
+
+**Preparation**
+
+0. Lecture zero: Python, NumPy and Numba — *in preparation*
+
+**I. Motion and oscillations**
+
+1. The pendulum: how a numerical method goes wrong — *in preparation*
+2. Chaos: the double pendulum and the three-body problem — *in preparation*
+3. Coupled oscillators and normal modes — *in preparation*
+
+**II. Fields, diffusion and waves**
+
+4. Electrostatics: the Poisson equation and large linear systems — *in preparation*
+5. Heat conduction and diffusion — *in preparation*
+6. Waves and the telegraph equation — *in preparation*
+7. Fourier analysis: frequencies in a signal and spectral solution of equations — *in preparation*
+
+**III. Quantum mechanics**
+
+8. The Schrödinger equation: energy levels — *in preparation*
+9. Quantum evolution: wave packets, tunnelling, neutrino oscillations — *in preparation*
+
+**IV. The Universe and data**
+
+10. Cosmology: the expansion of the Universe and «freeze-out» — *in preparation*
+11. Functions on the sphere: multipoles and sky maps — *in preparation*
+12. Inverse problems: the reactor antineutrino spectrum and the SVD — *in preparation*
+
+**V. Flows, transport and large computations**
+
+13. Hydrodynamics I: conservation laws and shock waves — *in preparation*
+14. Hydrodynamics II: vortices and two-dimensional turbulence — *in preparation*
+15. The transport equation: from Boltzmann to light in water — *in preparation*
+16. Fast computations and verification: from a prototype to production code — *in preparation*
+
