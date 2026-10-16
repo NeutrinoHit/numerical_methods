@@ -37,7 +37,6 @@ format:
     transition: fade
     center: true
     logo: shared/figures/dvnlogo.png
-    html-math-method: mathjax
     include-after-body:
       - text: |
           <script data-external="1" data-context-home="https://neutrinohit.github.io/numerical_methods/" data-context-home-label="Страница курса" src="shared/reveal/neutrinohit-reveal-footer.js"></script>
