@@ -18,14 +18,14 @@ toc: false
 
   <section class="course-intro">
     <img class="course-site-logo" src="shared/figures/dvnlogo.png" alt="NeutrinoHit">
-    <p class="course-kicker">Курс лекций и онлайн-книга · русский и английский языки · в подготовке</p>
+    <p class="course-kicker">Курс лекций · русский и английский языки · в подготовке</p>
     <h1>Численные методы для физиков</h1>
     <p>
       Курс о том, как физик решает задачи, которые не берутся аналитически.
       Лекция — одна физическая задача; нужные методы вводятся тогда, когда
       задача без них не решается. Язык — Python с Numba. Один семестр
       (январь–май): 17 лекций по 1.5 часа для бакалавров, семинары, общие
-      задачи и онлайн-книга.
+      задачи и ноутбуки.
     </p>
     <p class="course-author-note">
       Авторы: Кирилл Базаров, Дмитрий Наумов. Другие курсы и материалы собраны на
@@ -42,9 +42,8 @@ toc: false
         <div class="course-links"><a href="ru/slides/index.html">Открыть</a></div>
       </article>
       <article class="course-material">
-        <h3>Книга RU</h3>
-        <p>Онлайн-книга: от физической задачи к методу и проверке точности.</p>
-        <div class="course-links"><a href="ru/book/index.html">Открыть</a></div>
+        <h3>Книга</h3>
+        <p>Книга к курсу готовится.</p>
       </article>
       <article class="course-material">
         <h3>Задачи</h3>
@@ -53,10 +52,9 @@ toc: false
       </article>
       <article class="course-material">
         <h3>English</h3>
-        <p>Numerical Methods for Physicists: slides, exercises and online book — in preparation.</p>
+        <p>Numerical Methods for Physicists: slides and exercises — in preparation.</p>
         <div class="course-links">
           <a href="en/slides/index.html">Slides</a>
-          <a href="en/book/index.html">Book</a>
         </div>
       </article>
       <article class="course-material">
@@ -81,7 +79,6 @@ toc: false
           <a href="ru/slides/01_python_numpy_numba.html">Открыть лекцию</a>
           <a href="ru/slides/notebooks/01_python_numpy_numba.html">Ноутбук</a>
           <a href="ru/slides/exercises/01_python_numpy_numba_exercises.html">Задачи</a>
-          <a href="ru/book/chapters/01_python_numpy_numba.html">Глава</a>
         </div>
       </article>
       <article class="course-card is-planned"><span class="course-card-status">02 · готовится</span><h3>Маятник: как ошибается численный метод</h3></article>
@@ -116,7 +113,7 @@ toc: false
 
 Рабочие инструкции для авторов лекций. Образец лекции — [«Python, NumPy и
 Numba»](ru/slides/01_python_numpy_numba.html): слайды, ноутбук, глава книги и
-задачи.
+задачи. Книга на сайте не публикуется.
 
 - [Git для соавтора: минимум](docs/git-guide.md) — установка, ветка лекции,
   коммит, pull request, как отменить.

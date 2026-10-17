@@ -26,7 +26,6 @@ A course on how a physicist solves problems that have no analytic solution. One 
 <div class="lecture-links">
 <a href="https://neutrinohit.github.io/">NeutrinoHit</a>
 <a href="../../index.html">Course home</a>
-<a href="../book/index.html">Online book</a>
 <a href="exercises/index.html">All exercises</a>
 <span class="lecture-link-pending">Notebooks: in preparation</span>
 <span class="lecture-link-pending">Applets: in preparation</span>

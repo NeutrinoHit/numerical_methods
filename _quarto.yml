@@ -26,8 +26,6 @@ website:
         text: Курс
       - href: ru/slides/index.html
         text: Слайды
-      - href: ru/book/index.html
-        text: Книга
       - href: en/slides/index.html
         text: EN
   page-footer:

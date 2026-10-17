@@ -26,7 +26,6 @@ format:
 <div class="lecture-links">
 <a href="https://neutrinohit.github.io/">NeutrinoHit</a>
 <a href="../../index.html">Страница курса</a>
-<a href="../book/index.html">Онлайн-книга</a>
 <a href="exercises/index.html">Все задачи</a>
 <span class="lecture-link-pending">Апплеты: готовится</span>
 <span class="lecture-link-pending">Литература: готовится</span>
@@ -59,7 +58,6 @@ format:
 <a href="notebooks/01_python_numpy_numba.html">Ноутбук</a>
 <a href="notebooks/01_python_numpy_numba.ipynb">Скачать .ipynb</a>
 <a href="exercises/01_python_numpy_numba_exercises.html">Задачи</a>
-<a href="../book/chapters/01_python_numpy_numba.html">Глава в онлайн-книге</a>
 </div>
 
 </div>

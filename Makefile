@@ -36,23 +36,17 @@ ci-setup: ## Установить зависимости для CI
 	  $(QUARTO) install tinytex --no-prompt; \
 	fi
 
-site: check-env ## Собрать полный сайт в _site (страница курса, книги HTML+PDF и слайды RU и EN)
+site: check-env ## Собрать сайт в _site (страница курса и слайды RU и EN; книги не публикуются)
 	rm -rf _site $(BOOK_RU_DIR)/_book $(BOOK_EN_DIR)/_book $(SLIDES_RU_DIR)/_site $(SLIDES_EN_DIR)/_site
 	$(QUARTO) render
-	$(QUARTO) render $(BOOK_RU_DIR) --to html
-	$(QUARTO) render $(BOOK_RU_DIR) --to pdf
-	$(QUARTO) render $(BOOK_EN_DIR) --to html
-	$(QUARTO) render $(BOOK_EN_DIR) --to pdf
 	$(QUARTO) render $(SLIDES_RU_DIR)
 	$(QUARTO) render $(SLIDES_EN_DIR)
 	find _site -type f -name '*.qmd' -delete
 	test -s _site/index.html
 	test -s _site/ru/slides/index.html
 	test -s _site/en/slides/index.html
-	test -s _site/ru/book/index.html
-	test -s _site/en/book/index.html
-	test -s _site/ru/book/numerical-methods.pdf
-	test -s _site/en/book/numerical-methods.pdf
+	test ! -e _site/ru/book
+	test ! -e _site/en/book
 
 sync-shared: check-env ## Обновить общие RevealJS- и книжные ресурсы из ../neutrinohit-map
 	$(PYTHON) scripts/sync_shared_assets.py
