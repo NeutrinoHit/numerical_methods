@@ -1,7 +1,10 @@
 project:
   type: website
+  pre-render: ../../scripts/export_notebooks.py
+  post-render: ../../scripts/export_notebooks.py
   output-dir: ../../_site/en/slides
   resources:
+    - notebooks/[0-9][0-9]_*.ipynb
     - shared/figures/**
     - shared/reveal/**
   render:

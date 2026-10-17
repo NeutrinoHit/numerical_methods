@@ -6,6 +6,14 @@
 **/*.quarto_ipynb*
 /_freeze/
 .ipynb_checkpoints/
+# Notebooks exported from notebooks/*.qmd at render time
+/ru/slides/notebooks/*.ipynb
+/en/slides/notebooks/*.ipynb
+# Previews of unpublished lectures rendered next to their sources
+/*/slides/planned/*.html
+/*/book/planned/*.html
+# LaTeX source kept by keep-tex during the PDF build
+/*/book/numerical-methods.tex
 
 # Local build/cache
 .make-tmp/

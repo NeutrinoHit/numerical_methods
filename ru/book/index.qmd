@@ -16,7 +16,7 @@ format:
 
 **Подготовка**
 
-0. Нулевая лекция: Python, NumPy и Numba — *готовится*
+0. [Нулевая лекция: Python, NumPy и Numba](chapters/00_python_numpy_numba.qmd)
 
 **I. Движение и колебания**
 

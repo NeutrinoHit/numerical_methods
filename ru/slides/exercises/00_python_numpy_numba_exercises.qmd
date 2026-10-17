@@ -1,0 +1,15 @@
+---
+title: "Задачи: Python, NumPy и Numba"
+subtitle: "Численные методы для физиков"
+author: "Дмитрий В. Наумов"
+format:
+  html:
+    toc: false
+---
+
+[← Вернуться к курсу](../index.html){.exercise-back-link}
+
+Ноутбук лекции: [открыть](../notebooks/00_python_numpy_numba.html) ·
+[скачать .ipynb](../notebooks/00_python_numpy_numba.ipynb)
+
+{{< include ../../../_includes/exercises/00_python_numpy_numba-ru.qmd >}}

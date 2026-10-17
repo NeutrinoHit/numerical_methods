@@ -1,12 +1,18 @@
 project:
   type: website
+  pre-render: ../../scripts/export_notebooks.py
+  post-render: ../../scripts/export_notebooks.py
   output-dir: ../../_site/ru/slides
   resources:
+    - notebooks/[0-9][0-9]_*.ipynb
     - shared/figures/**
     - shared/reveal/**
   render:
     - index.qmd
     - exercises/index.qmd
+    - 00_python_numpy_numba.qmd
+    - exercises/00_python_numpy_numba_exercises.qmd
+    - notebooks/00_python_numpy_numba.qmd
     # Лекции добавляются по мере готовности: файл переносится из planned/ с номером,
     # затем указывается здесь. Пример:
     # - NN_python_numpy_numba.qmd

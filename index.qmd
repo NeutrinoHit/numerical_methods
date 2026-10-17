@@ -72,7 +72,17 @@ toc: false
   <section aria-label="Лекции курса">
     <h2 class="course-section-title">Лекции</h2>
     <div class="course-card-grid">
-      <article class="course-card is-planned"><span class="course-card-status">00 · готовится</span><h3>Нулевая лекция: Python, NumPy и Numba</h3></article>
+      <article class="course-card">
+        <span class="course-card-status">00 · RU</span>
+        <h3>Нулевая лекция: Python, NumPy и Numba</h3>
+        <p>Случайное блуждание и число π методом Монте-Карло: рабочая среда, массивы NumPy, точность чисел, генератор случайных чисел, Numba.</p>
+        <div class="course-links">
+          <a href="ru/slides/00_python_numpy_numba.html">Открыть лекцию</a>
+          <a href="ru/slides/notebooks/00_python_numpy_numba.html">Ноутбук</a>
+          <a href="ru/slides/exercises/00_python_numpy_numba_exercises.html">Задачи</a>
+          <a href="ru/book/chapters/00_python_numpy_numba.html">Глава</a>
+        </div>
+      </article>
       <article class="course-card is-planned"><span class="course-card-status">01 · готовится</span><h3>Маятник: как ошибается численный метод</h3></article>
       <article class="course-card is-planned"><span class="course-card-status">02 · готовится</span><h3>Хаос: двойной маятник и задача трёх тел</h3></article>
       <article class="course-card is-planned"><span class="course-card-status">03 · готовится</span><h3>Связанные осцилляторы и нормальные моды</h3></article>

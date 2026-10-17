@@ -28,7 +28,6 @@ format:
 <a href="../../index.html">Страница курса</a>
 <a href="../book/index.html">Онлайн-книга</a>
 <a href="exercises/index.html">Все задачи</a>
-<span class="lecture-link-pending">Ноутбуки: готовится</span>
 <span class="lecture-link-pending">Апплеты: готовится</span>
 <span class="lecture-link-pending">Литература: готовится</span>
 </div>
@@ -56,7 +55,11 @@ format:
 **Инструменты:** виртуальное окружение, Jupyter, массивы NumPy, срезы и broadcasting, типы данных и точность, генератор случайных чисел с seed, Matplotlib, `%timeit`, Numba (`@njit`: когда помогает и когда нет).
 
 <div class="lecture-links">
-<span class="lecture-link-pending">готовится</span>
+<a href="00_python_numpy_numba.html">Открыть лекцию</a>
+<a href="notebooks/00_python_numpy_numba.html">Ноутбук</a>
+<a href="notebooks/00_python_numpy_numba.ipynb">Скачать .ipynb</a>
+<a href="exercises/00_python_numpy_numba_exercises.html">Задачи</a>
+<a href="../book/chapters/00_python_numpy_numba.html">Глава в онлайн-книге</a>
 </div>
 
 </div>

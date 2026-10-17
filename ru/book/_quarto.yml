@@ -17,6 +17,9 @@ book:
   chapters:
     - index.qmd
     - preface.qmd
+    - part: "Подготовка"
+      chapters:
+        - chapters/00_python_numpy_numba.qmd
     # Главы добавляются по мере готовности: файл переносится из planned/ с номером
     # (номер совпадает с номером лекции) и вставляется в часть, например:
     #   - part: "Подготовка"
