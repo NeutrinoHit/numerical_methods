@@ -1,12 +1,12 @@
 ---
 title: "Inverse problems: the reactor antineutrino spectrum and the SVD"
-description: "The singular value decomposition, the condition number, the pseudo-inverse, truncated SVD and Tikhonov regularization, best low-rank approximation. Convolution with the detector resolution and its inversion through the FFT (lecture 7)."
+description: "The singular value decomposition, the condition number, the pseudo-inverse, truncated SVD and Tikhonov regularization, best low-rank approximation. Convolution with the detector resolution and its inversion through the FFT (lecture 8)."
 ---
 
 ::: {.chapter-opening}
 <span>Abstract</span>
 
-The singular value decomposition, the condition number, the pseudo-inverse, truncated SVD and Tikhonov regularization, best low-rank approximation. Convolution with the detector resolution and its inversion through the FFT (lecture 7).
+The singular value decomposition, the condition number, the pseudo-inverse, truncated SVD and Tikhonov regularization, best low-rank approximation. Convolution with the detector resolution and its inversion through the FFT (lecture 8).
 
 Chapter in preparation.
 :::
@@ -27,7 +27,7 @@ Chapter in preparation.
 
 ## Sidebar: LightHit
 
-The POD basis of a shower — compression of reusable computations (lecture 16).
+The POD basis of a shower — compression of reusable computations (lecture 17).
 
 ## Exercises
 

@@ -32,6 +32,18 @@ body:not(.reveal-viewport) main.content {
   padding-bottom: 4rem;
 }
 
+/* Notebook pages (notebooks/*.qmd): the main column stays in its grid cell
+   next to the table of contents, figures fit the column. */
+body.notebook-page main.content {
+  max-width: none;
+  margin: 0;
+}
+
+body.notebook-page main.content img {
+  max-width: 100%;
+  height: auto;
+}
+
 .course-index {
   max-width: 1080px;
   margin: 0 auto;

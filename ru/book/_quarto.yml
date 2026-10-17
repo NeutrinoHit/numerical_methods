@@ -6,51 +6,53 @@ book:
   title: "Численные методы для физиков"
   output-file: numerical-methods
   subtitle: "Метод, проверка, физический результат"
-  author: "Дмитрий В. Наумов"
+  author:
+    - "Кирилл Базаров"
+    - "Дмитрий В. Наумов"
   repo-subdir: "ru/book"
   search: true
   reader-mode: true
   downloads: [pdf]
   page-footer:
-    left: "© Дмитрий В. Наумов"
+    left: "© Кирилл Базаров, Дмитрий В. Наумов"
     right: "NeutrinoHit · Численные методы"
   chapters:
     - index.qmd
     - preface.qmd
     - part: "Подготовка"
       chapters:
-        - chapters/00_python_numpy_numba.qmd
+        - chapters/01_python_numpy_numba.qmd
     # Главы добавляются по мере готовности: файл переносится из planned/ с номером
     # (номер совпадает с номером лекции) и вставляется в часть, например:
     #   - part: "Подготовка"
     #     chapters:
-    #       - chapters/00_python_numpy_numba.qmd
+    #       - chapters/01_python_numpy_numba.qmd
     #   - part: "I. Движение и колебания"
     #     chapters:
-    #       - chapters/01_pendulum_and_errors.qmd
-    #       - chapters/02_chaos_double_pendulum.qmd
-    #       - chapters/03_coupled_oscillators.qmd
+    #       - chapters/02_pendulum_and_errors.qmd
+    #       - chapters/03_chaos_double_pendulum.qmd
+    #       - chapters/04_coupled_oscillators.qmd
     #   - part: "II. Поля, диффузия и волны"
     #     chapters:
-    #       - chapters/04_electrostatics_poisson.qmd
-    #       - chapters/05_heat_equation.qmd
-    #       - chapters/06_telegraph_and_waves.qmd
-    #       - chapters/07_fourier_and_fft.qmd
+    #       - chapters/05_electrostatics_poisson.qmd
+    #       - chapters/06_heat_equation.qmd
+    #       - chapters/07_telegraph_and_waves.qmd
+    #       - chapters/08_fourier_and_fft.qmd
     #   - part: "III. Квантовая механика"
     #     chapters:
-    #       - chapters/08_schrodinger_stationary.qmd
-    #       - chapters/09_schrodinger_dynamics_neutrinos.qmd
+    #       - chapters/09_schrodinger_stationary.qmd
+    #       - chapters/10_schrodinger_dynamics_neutrinos.qmd
     #   - part: "IV. Космос и данные"
     #     chapters:
-    #       - chapters/10_cosmology.qmd
-    #       - chapters/11_sphere_and_multipoles.qmd
-    #       - chapters/12_inverse_problems_svd.qmd
+    #       - chapters/11_cosmology.qmd
+    #       - chapters/12_sphere_and_multipoles.qmd
+    #       - chapters/13_inverse_problems_svd.qmd
     #   - part: "V. Течения, перенос и большие расчёты"
     #     chapters:
-    #       - chapters/13_hydrodynamics_shocks.qmd
-    #       - chapters/14_hydrodynamics_vortices.qmd
-    #       - chapters/15_radiative_transfer.qmd
-    #       - chapters/16_fast_codes_and_verification.qmd
+    #       - chapters/14_hydrodynamics_shocks.qmd
+    #       - chapters/15_hydrodynamics_vortices.qmd
+    #       - chapters/16_radiative_transfer.qmd
+    #       - chapters/17_fast_codes_and_verification.qmd
 
 bibliography: ../../shared/bib/references.bib
 csl: ../../shared/bib/neutrinohit-numeric.csl

@@ -7,9 +7,9 @@ format: revealjs
 
 ## Lecture outline (draft)
 
-The collision integral, the mean free path, the transport problem. Methods: Monte Carlo (the random walk of a photon), the diffusion approximation, expansion in angular moments (lecture 11). Comparison of cost and accuracy.
+The collision integral, the mean free path, the transport problem. Methods: Monte Carlo (the random walk of a photon), the diffusion approximation, expansion in angular moments (lecture 12). Comparison of cost and accuracy.
 
-- **Problem:** A photon in a turbid medium: ballistics, diffusion (lecture 5), finite speed (lecture 6). The example is light in Lake Baikal and a neutrino telescope.
+- **Problem:** A photon in a turbid medium: ballistics, diffusion (lecture 6), finite speed (lecture 7). The example is light in Lake Baikal and a neutrino telescope.
 - **Tools:** Monte Carlo for transport (sampling free paths and angles), the $1/\sqrt N$ error, the diffusion approximation, $P_N$.
 
 ::: {.takeaway}

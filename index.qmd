@@ -23,11 +23,12 @@ toc: false
     <p>
       Курс о том, как физик решает задачи, которые не берутся аналитически.
       Лекция — одна физическая задача; нужные методы вводятся тогда, когда
-      задача без них не решается. Язык — Python с Numba. Нулевая лекция и
-      16 лекций по 1.5 часа для бакалавров, общие задачи и онлайн-книга.
+      задача без них не решается. Язык — Python с Numba. Один семестр
+      (январь–май): 17 лекций по 1.5 часа для бакалавров, семинары, общие
+      задачи и онлайн-книга.
     </p>
     <p class="course-author-note">
-      Автор: Дмитрий Наумов. Другие курсы и материалы собраны на
+      Авторы: Кирилл Базаров, Дмитрий Наумов. Другие курсы и материалы собраны на
       <a href="https://neutrinohit.github.io/ru/">NeutrinoHit</a>.
     </p>
   </section>
@@ -73,33 +74,59 @@ toc: false
     <h2 class="course-section-title">Лекции</h2>
     <div class="course-card-grid">
       <article class="course-card">
-        <span class="course-card-status">00 · RU</span>
-        <h3>Нулевая лекция: Python, NumPy и Numba</h3>
+        <span class="course-card-status">01 · RU</span>
+        <h3>Python, NumPy и Numba</h3>
         <p>Случайное блуждание и число π методом Монте-Карло: рабочая среда, массивы NumPy, точность чисел, генератор случайных чисел, Numba.</p>
         <div class="course-links">
-          <a href="ru/slides/00_python_numpy_numba.html">Открыть лекцию</a>
-          <a href="ru/slides/notebooks/00_python_numpy_numba.html">Ноутбук</a>
-          <a href="ru/slides/exercises/00_python_numpy_numba_exercises.html">Задачи</a>
-          <a href="ru/book/chapters/00_python_numpy_numba.html">Глава</a>
+          <a href="ru/slides/01_python_numpy_numba.html">Открыть лекцию</a>
+          <a href="ru/slides/notebooks/01_python_numpy_numba.html">Ноутбук</a>
+          <a href="ru/slides/exercises/01_python_numpy_numba_exercises.html">Задачи</a>
+          <a href="ru/book/chapters/01_python_numpy_numba.html">Глава</a>
         </div>
       </article>
-      <article class="course-card is-planned"><span class="course-card-status">01 · готовится</span><h3>Маятник: как ошибается численный метод</h3></article>
-      <article class="course-card is-planned"><span class="course-card-status">02 · готовится</span><h3>Хаос: двойной маятник и задача трёх тел</h3></article>
-      <article class="course-card is-planned"><span class="course-card-status">03 · готовится</span><h3>Связанные осцилляторы и нормальные моды</h3></article>
-      <article class="course-card is-planned"><span class="course-card-status">04 · готовится</span><h3>Электростатика: уравнение Пуассона и большие линейные системы</h3></article>
-      <article class="course-card is-planned"><span class="course-card-status">05 · готовится</span><h3>Теплопроводность и диффузия</h3></article>
-      <article class="course-card is-planned"><span class="course-card-status">06 · готовится</span><h3>Волны и телеграфное уравнение</h3></article>
-      <article class="course-card is-planned"><span class="course-card-status">07 · готовится</span><h3>Фурье-анализ: частоты в сигнале и спектральное решение уравнений</h3></article>
-      <article class="course-card is-planned"><span class="course-card-status">08 · готовится</span><h3>Уравнение Шрёдингера: уровни энергии</h3></article>
-      <article class="course-card is-planned"><span class="course-card-status">09 · готовится</span><h3>Квантовая эволюция: пакеты, туннелирование, осцилляции нейтрино</h3></article>
-      <article class="course-card is-planned"><span class="course-card-status">10 · готовится</span><h3>Космология: расширение Вселенной и «замораживание»</h3></article>
-      <article class="course-card is-planned"><span class="course-card-status">11 · готовится</span><h3>Функции на сфере: мультиполи и карты неба</h3></article>
-      <article class="course-card is-planned"><span class="course-card-status">12 · готовится</span><h3>Обратные задачи: спектр реакторных антинейтрино и SVD</h3></article>
-      <article class="course-card is-planned"><span class="course-card-status">13 · готовится</span><h3>Гидродинамика I: законы сохранения и ударные волны</h3></article>
-      <article class="course-card is-planned"><span class="course-card-status">14 · готовится</span><h3>Гидродинамика II: вихри и двумерная турбулентность</h3></article>
-      <article class="course-card is-planned"><span class="course-card-status">15 · готовится</span><h3>Уравнение переноса: от Больцмана к свету в воде</h3></article>
-      <article class="course-card is-planned"><span class="course-card-status">16 · готовится</span><h3>Быстрые расчёты и проверка: от прототипа к рабочему коду</h3></article>
+      <article class="course-card is-planned"><span class="course-card-status">02 · готовится</span><h3>Маятник: как ошибается численный метод</h3></article>
+      <article class="course-card is-planned"><span class="course-card-status">03 · готовится</span><h3>Хаос: двойной маятник и задача трёх тел</h3></article>
+      <article class="course-card is-planned"><span class="course-card-status">04 · готовится</span><h3>Связанные осцилляторы и нормальные моды</h3></article>
+      <article class="course-card is-planned"><span class="course-card-status">05 · готовится</span><h3>Электростатика: уравнение Пуассона и большие линейные системы</h3></article>
+      <article class="course-card is-planned"><span class="course-card-status">06 · готовится</span><h3>Теплопроводность и диффузия</h3></article>
+      <article class="course-card is-planned"><span class="course-card-status">07 · готовится</span><h3>Волны и телеграфное уравнение</h3></article>
+      <article class="course-card is-planned"><span class="course-card-status">08 · готовится</span><h3>Фурье-анализ: частоты в сигнале и спектральное решение уравнений</h3></article>
+      <article class="course-card is-planned"><span class="course-card-status">09 · готовится</span><h3>Уравнение Шрёдингера: уровни энергии</h3></article>
+      <article class="course-card is-planned"><span class="course-card-status">10 · готовится</span><h3>Квантовая эволюция: пакеты, туннелирование, осцилляции нейтрино</h3></article>
+      <article class="course-card is-planned"><span class="course-card-status">11 · готовится</span><h3>Космология: расширение Вселенной и «замораживание»</h3></article>
+      <article class="course-card is-planned"><span class="course-card-status">12 · готовится</span><h3>Функции на сфере: мультиполи и карты неба</h3></article>
+      <article class="course-card is-planned"><span class="course-card-status">13 · готовится</span><h3>Обратные задачи: спектр реакторных антинейтрино и SVD</h3></article>
+      <article class="course-card is-planned"><span class="course-card-status">14 · готовится</span><h3>Гидродинамика I: законы сохранения и ударные волны</h3></article>
+      <article class="course-card is-planned"><span class="course-card-status">15 · готовится</span><h3>Гидродинамика II: вихри и двумерная турбулентность</h3></article>
+      <article class="course-card is-planned"><span class="course-card-status">16 · готовится</span><h3>Уравнение переноса: от Больцмана к свету в воде</h3></article>
+      <article class="course-card is-planned"><span class="course-card-status">17 · готовится</span><h3>Быстрые расчёты и проверка: от прототипа к рабочему коду</h3></article>
     </div>
   </section>
+```
+
+::: {.course-plan}
+
+{{< include _includes/course-plan-ru.qmd >}}
+
+:::
+
+::: {.course-authors-guide}
+
+## Для авторов курса {#authors}
+
+Рабочие инструкции для авторов лекций. Образец лекции — [«Python, NumPy и
+Numba»](ru/slides/01_python_numpy_numba.html): слайды, ноутбук, глава книги и
+задачи.
+
+- [Git для соавтора: минимум](docs/git-guide.md) — установка, ветка лекции,
+  коммит, pull request, как отменить.
+- [Quarto: как написать лекцию](docs/quarto-guide.md) — файлы лекции,
+  ноутбук, слайды, глава, задачи, предпросмотр.
+- [Правила подготовки лекций](docs/authoring-guide.md) — воспроизводимость,
+  проверка результата, единицы и соглашения.
+
+:::
+
+```{=html}
 </div>
 ```

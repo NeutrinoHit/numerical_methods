@@ -10,9 +10,9 @@ project:
   render:
     - index.qmd
     - exercises/index.qmd
-    - 00_python_numpy_numba.qmd
-    - exercises/00_python_numpy_numba_exercises.qmd
-    - notebooks/00_python_numpy_numba.qmd
+    - 01_python_numpy_numba.qmd
+    - exercises/01_python_numpy_numba_exercises.qmd
+    - notebooks/01_python_numpy_numba.qmd
     # Лекции добавляются по мере готовности: файл переносится из planned/ с номером,
     # затем указывается здесь. Пример:
     # - NN_python_numpy_numba.qmd

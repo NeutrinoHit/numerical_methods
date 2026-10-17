@@ -1,12 +1,12 @@
 ---
 title: "Fast computations and verification: from a prototype to production code"
-description: "Profiling, vectorization and Numba, reuse of computations (caching, low rank from lecture 12), tests on analytic limits, the method of manufactured solutions, error budgets."
+description: "Profiling, vectorization and Numba, reuse of computations (caching, low rank from lecture 13), tests on analytic limits, the method of manufactured solutions, error budgets."
 ---
 
 ::: {.chapter-opening}
 <span>Abstract</span>
 
-Profiling, vectorization and Numba, reuse of computations (caching, low rank from lecture 12), tests on analytic limits, the method of manufactured solutions, error budgets.
+Profiling, vectorization and Numba, reuse of computations (caching, low rank from lecture 13), tests on analytic limits, the method of manufactured solutions, error budgets.
 
 Chapter in preparation.
 :::

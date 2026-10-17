@@ -1,11 +1,10 @@
 ---
+title: "Python, NumPy и Numba"
 description: "Рабочая среда (виртуальное окружение, Jupyter и Quarto), основы Python, массивы NumPy и векторизация, графики Matplotlib, измерение времени, компиляция критичных циклов с Numba."
 execute:
   echo: true
   warning: false
 ---
-
-# Нулевая лекция: Python, NumPy и Numba {.unnumbered}
 
 ::: {.chapter-opening}
 <span>Аннотация</span>
@@ -18,8 +17,8 @@ Numba.
 :::
 
 Весь код главы собран в ноутбуке лекции:
-[открыть](https://neutrinohit.github.io/numerical_methods/ru/slides/notebooks/00_python_numpy_numba.html),
-[скачать .ipynb](https://neutrinohit.github.io/numerical_methods/ru/slides/notebooks/00_python_numpy_numba.ipynb).
+[открыть](https://neutrinohit.github.io/numerical_methods/ru/slides/notebooks/01_python_numpy_numba.html),
+[скачать .ipynb](https://neutrinohit.github.io/numerical_methods/ru/slides/notebooks/01_python_numpy_numba.ipynb).
 Его можно запустить на своём компьютере или в браузере (Google Colab).
 
 ## Физическая задача
@@ -331,4 +330,4 @@ pandas, большинство функций SciPy. Она нужна для ц
 
 ## Задачи
 
-{{< include ../../../_includes/exercises/00_python_numpy_numba-ru.qmd >}}
+{{< include ../../../_includes/exercises/01_python_numpy_numba-ru.qmd >}}

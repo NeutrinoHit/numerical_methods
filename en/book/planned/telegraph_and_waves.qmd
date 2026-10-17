@@ -27,7 +27,7 @@ Chapter in preparation.
 
 ## Sidebar: LightHit
 
-The P1 approximation of the transport equation leads to the telegraph equation (lecture 15).
+The P1 approximation of the transport equation leads to the telegraph equation (lecture 16).
 
 ## Exercises
 

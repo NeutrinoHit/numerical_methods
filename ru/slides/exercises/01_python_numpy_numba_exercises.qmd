@@ -9,7 +9,7 @@ format:
 
 [← Вернуться к курсу](../index.html){.exercise-back-link}
 
-Ноутбук лекции: [открыть](../notebooks/00_python_numpy_numba.html) ·
-[скачать .ipynb](../notebooks/00_python_numpy_numba.ipynb)
+Ноутбук лекции: [открыть](../notebooks/01_python_numpy_numba.html) ·
+[скачать .ipynb](../notebooks/01_python_numpy_numba.ipynb)
 
-{{< include ../../../_includes/exercises/00_python_numpy_numba-ru.qmd >}}
+{{< include ../../../_includes/exercises/01_python_numpy_numba-ru.qmd >}}

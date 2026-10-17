@@ -1,7 +1,7 @@
 ---
 title: "Numerical Methods for Physicists"
 subtitle: "Lecture course"
-author: "Dmitry V. Naumov"
+author: "Kirill Bazarov, Dmitry V. Naumov"
 format:
   html:
     toc: false
@@ -37,7 +37,7 @@ Course card on the NeutrinoHit map: in preparation.
 :::
 
 ::: {.course-intro}
-Course author: Dmitry V. Naumov, [profile on NeutrinoHit](https://neutrinohit.github.io/).
+Course authors: Kirill Bazarov and Dmitry V. Naumov ([profile on NeutrinoHit](https://neutrinohit.github.io/)).
 :::
 
 ## Course lectures
@@ -47,7 +47,7 @@ Course author: Dmitry V. Naumov, [profile on NeutrinoHit](https://neutrinohit.gi
 
 <p class="course-kicker">Preparation</p>
 <details class="lecture-row">
-<summary><span class="lecture-index">00</span><span>Lecture zero: Python, NumPy and Numba</span></summary>
+<summary><span class="lecture-index">01</span><span>Python, NumPy and Numba</span></summary>
 
 <div class="lecture-row-body">
 
@@ -64,7 +64,7 @@ The working environment (a virtual environment, Jupyter and Quarto), Python basi
 
 <p class="course-kicker">Part I. Motion and oscillations</p>
 <details class="lecture-row">
-<summary><span class="lecture-index">01</span><span>The pendulum: how a numerical method goes wrong</span></summary>
+<summary><span class="lecture-index">02</span><span>The pendulum: how a numerical method goes wrong</span></summary>
 
 <div class="lecture-row-body">
 
@@ -79,7 +79,7 @@ From Euler to Runge–Kutta and Verlet: order of accuracy, local and global erro
 </div>
 </details>
 <details class="lecture-row">
-<summary><span class="lecture-index">02</span><span>Chaos: the double pendulum and the three-body problem</span></summary>
+<summary><span class="lecture-index">03</span><span>Chaos: the double pendulum and the three-body problem</span></summary>
 
 <div class="lecture-row-body">
 
@@ -94,7 +94,7 @@ Adaptive step size and error control, the Lyapunov exponent, Poincaré sections.
 </div>
 </details>
 <details class="lecture-row">
-<summary><span class="lecture-index">03</span><span>Coupled oscillators and normal modes</span></summary>
+<summary><span class="lecture-index">04</span><span>Coupled oscillators and normal modes</span></summary>
 
 <div class="lecture-row-body">
 
@@ -111,7 +111,7 @@ A chain of $N$ masses: the stiffness matrix, eigenvalues and eigenvectors, the d
 
 <p class="course-kicker">Part II. Fields, diffusion and waves</p>
 <details class="lecture-row">
-<summary><span class="lecture-index">04</span><span>Electrostatics: the Poisson equation and large linear systems</span></summary>
+<summary><span class="lecture-index">05</span><span>Electrostatics: the Poisson equation and large linear systems</span></summary>
 
 <div class="lecture-row-body">
 
@@ -126,7 +126,7 @@ A finite-difference scheme turns the equation into a linear system with $N^2$ un
 </div>
 </details>
 <details class="lecture-row">
-<summary><span class="lecture-index">05</span><span>Heat conduction and diffusion</span></summary>
+<summary><span class="lecture-index">06</span><span>Heat conduction and diffusion</span></summary>
 
 <div class="lecture-row-body">
 
@@ -141,7 +141,7 @@ The explicit scheme and its stability condition, the implicit scheme and tridiag
 </div>
 </details>
 <details class="lecture-row">
-<summary><span class="lecture-index">06</span><span>Waves and the telegraph equation</span></summary>
+<summary><span class="lecture-index">07</span><span>Waves and the telegraph equation</span></summary>
 
 <div class="lecture-row-body">
 
@@ -156,7 +156,7 @@ The wave equation, the CFL condition, numerical dispersion and dissipation; upwi
 </div>
 </details>
 <details class="lecture-row">
-<summary><span class="lecture-index">07</span><span>Fourier analysis: frequencies in a signal and spectral solution of equations</span></summary>
+<summary><span class="lecture-index">08</span><span>Fourier analysis: frequencies in a signal and spectral solution of equations</span></summary>
 
 <div class="lecture-row-body">
 
@@ -173,7 +173,7 @@ The DFT and FFT, aliasing, spectral leakage and windows, the convolution theorem
 
 <p class="course-kicker">Part III. Quantum mechanics</p>
 <details class="lecture-row">
-<summary><span class="lecture-index">08</span><span>The Schrödinger equation: energy levels</span></summary>
+<summary><span class="lecture-index">09</span><span>The Schrödinger equation: energy levels</span></summary>
 
 <div class="lecture-row-body">
 
@@ -188,7 +188,7 @@ The Hamiltonian as a matrix (finite differences and a basis), shooting and the N
 </div>
 </details>
 <details class="lecture-row">
-<summary><span class="lecture-index">09</span><span>Quantum evolution: wave packets, tunnelling, neutrino oscillations</span></summary>
+<summary><span class="lecture-index">10</span><span>Quantum evolution: wave packets, tunnelling, neutrino oscillations</span></summary>
 
 <div class="lecture-row-body">
 
@@ -205,11 +205,11 @@ Crank–Nicolson (unitarity), operator splitting (split-step) with the FFT, the 
 
 <p class="course-kicker">Part IV. The Universe and data</p>
 <details class="lecture-row">
-<summary><span class="lecture-index">10</span><span>Cosmology: the expansion of the Universe and «freeze-out»</span></summary>
+<summary><span class="lecture-index">11</span><span>Cosmology: the expansion of the Universe and «freeze-out»</span></summary>
 
 <div class="lecture-row-body">
 
-Only a minimum of cosmology is needed: Hubble's law and the Friedmann equation, which reads as energy conservation (by analogy with lectures 1–2). The age of the Universe and distances through quadratures, root finding, fitting the Hubble diagram. A simple stiff problem: relaxation to equilibrium that the expansion «freezes» — explicit and implicit methods.
+Only a minimum of cosmology is needed: Hubble's law and the Friedmann equation, which reads as energy conservation (by analogy with lectures 2–3). The age of the Universe and distances through quadratures, root finding, fitting the Hubble diagram. A simple stiff problem: relaxation to equilibrium that the expansion «freezes» — explicit and implicit methods.
 
 **Tools:** numerical integration (rectangles, trapezoids, Simpson, Gauss) and the order of convergence, root finding (bisection, Newton), `curve_fit`, stiffness and the implicit Euler method.
 
@@ -220,11 +220,11 @@ Only a minimum of cosmology is needed: Hubble's law and the Friedmann equation, 
 </div>
 </details>
 <details class="lecture-row">
-<summary><span class="lecture-index">11</span><span>Functions on the sphere: multipoles and sky maps</span></summary>
+<summary><span class="lecture-index">12</span><span>Functions on the sphere: multipoles and sky maps</span></summary>
 
 <div class="lecture-row-body">
 
-Legendre polynomials and spherical harmonics, the addition theorem, Gauss–Legendre quadrature in $\cos\theta$, expansion of a map on a sphere and the power spectrum $C_\ell$. Gauss nodes as an eigenvalue problem (lecture 3).
+Legendre polynomials and spherical harmonics, the addition theorem, Gauss–Legendre quadrature in $\cos\theta$, expansion of a map on a sphere and the power spectrum $C_\ell$. Gauss nodes as an eigenvalue problem (lecture 4).
 
 **Tools:** $Y_{\ell m}$, Gauss–Legendre quadrature, stability of recurrence relations, analysis and synthesis of a map.
 
@@ -235,11 +235,11 @@ Legendre polynomials and spherical harmonics, the addition theorem, Gauss–Lege
 </div>
 </details>
 <details class="lecture-row">
-<summary><span class="lecture-index">12</span><span>Inverse problems: the reactor antineutrino spectrum and the SVD</span></summary>
+<summary><span class="lecture-index">13</span><span>Inverse problems: the reactor antineutrino spectrum and the SVD</span></summary>
 
 <div class="lecture-row-body">
 
-The singular value decomposition, the condition number, the pseudo-inverse, truncated SVD and Tikhonov regularization, best low-rank approximation. Convolution with the detector resolution and its inversion through the FFT (lecture 7).
+The singular value decomposition, the condition number, the pseudo-inverse, truncated SVD and Tikhonov regularization, best low-rank approximation. Convolution with the detector resolution and its inversion through the FFT (lecture 8).
 
 **Tools:** the SVD, the pseudo-inverse, regularization, low rank; the Cholesky factorization for generating correlated errors (link to the statistics course).
 
@@ -252,7 +252,7 @@ The singular value decomposition, the condition number, the pseudo-inverse, trun
 
 <p class="course-kicker">Part V. Flows, transport and large computations</p>
 <details class="lecture-row">
-<summary><span class="lecture-index">13</span><span>Hydrodynamics I: conservation laws and shock waves</span></summary>
+<summary><span class="lecture-index">14</span><span>Hydrodynamics I: conservation laws and shock waves</span></summary>
 
 <div class="lecture-row-body">
 
@@ -267,13 +267,13 @@ Conservative form, the finite-volume method, Lax–Friedrichs and Godunov fluxes
 </div>
 </details>
 <details class="lecture-row">
-<summary><span class="lecture-index">14</span><span>Hydrodynamics II: vortices and two-dimensional turbulence</span></summary>
+<summary><span class="lecture-index">15</span><span>Hydrodynamics II: vortices and two-dimensional turbulence</span></summary>
 
 <div class="lecture-row-body">
 
 The vorticity equation and the stream function, solving the Poisson equation with the FFT, the pseudo-spectral method and dealiasing, the Reynolds number and grid resolution, acceleration with Numba.
 
-**Tools:** the pseudo-spectral method, the 2/3 rule, time integration, reuse of the Poisson solver and FFT from lectures 4 and 7.
+**Tools:** the pseudo-spectral method, the 2/3 rule, time integration, reuse of the Poisson solver and FFT from lectures 5 and 8.
 
 <div class="lecture-links">
 <span class="lecture-link-pending">in preparation</span>
@@ -282,11 +282,11 @@ The vorticity equation and the stream function, solving the Poisson equation wit
 </div>
 </details>
 <details class="lecture-row">
-<summary><span class="lecture-index">15</span><span>The transport equation: from Boltzmann to light in water</span></summary>
+<summary><span class="lecture-index">16</span><span>The transport equation: from Boltzmann to light in water</span></summary>
 
 <div class="lecture-row-body">
 
-The collision integral, the mean free path, the transport problem. Methods: Monte Carlo (the random walk of a photon), the diffusion approximation, expansion in angular moments (lecture 11). Comparison of cost and accuracy.
+The collision integral, the mean free path, the transport problem. Methods: Monte Carlo (the random walk of a photon), the diffusion approximation, expansion in angular moments (lecture 12). Comparison of cost and accuracy.
 
 **Tools:** Monte Carlo for transport (sampling free paths and angles), the $1/\sqrt N$ error, the diffusion approximation, $P_N$.
 
@@ -297,11 +297,11 @@ The collision integral, the mean free path, the transport problem. Methods: Mont
 </div>
 </details>
 <details class="lecture-row">
-<summary><span class="lecture-index">16</span><span>Fast computations and verification: from a prototype to production code</span></summary>
+<summary><span class="lecture-index">17</span><span>Fast computations and verification: from a prototype to production code</span></summary>
 
 <div class="lecture-row-body">
 
-Profiling, vectorization and Numba, reuse of computations (caching, low rank from lecture 12), tests on analytic limits, the method of manufactured solutions, error budgets.
+Profiling, vectorization and Numba, reuse of computations (caching, low rank from lecture 13), tests on analytic limits, the method of manufactured solutions, error budgets.
 
 **Tools:** profiling, Numba (njit, parallel, the risks of fastmath), caching, regression and convergence tests.
 

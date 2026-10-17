@@ -27,7 +27,7 @@ Chapter in preparation.
 
 ## Sidebar: LightHit
 
-Diffusion is the limit of photon transport in a turbid medium (lecture 15).
+Diffusion is the limit of photon transport in a turbid medium (lecture 16).
 
 ## Exercises
 

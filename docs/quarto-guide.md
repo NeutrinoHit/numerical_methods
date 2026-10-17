@@ -2,7 +2,7 @@
 
 Лекция курса состоит из слайдов, главы онлайн-книги, задач и ноутбука. Все
 они пишутся в Quarto — это Markdown с формулами LaTeX и ячейками кода Python,
-которые выполняются при сборке. Образец — нулевая лекция: открывайте её файлы
+которые выполняются при сборке. Образец — лекция 1 «Python, NumPy и Numba»: открывайте её файлы
 рядом с этой инструкцией. Как сохранять работу в Git, описано в
 [`git-guide.md`](git-guide.md); требования к содержанию лекций — в
 [`authoring-guide.md`](authoring-guide.md).
@@ -28,12 +28,12 @@
 Пока лекция не опубликована, у неё нет номера, и все её файлы лежат в
 `planned/` под именем `slug` (например, `heat_equation`):
 
-| Что | Неопубликованная лекция | Опубликованная (образец — лекция 0) |
+| Что | Неопубликованная лекция | Опубликованная (образец — лекция 1) |
 |---|---|---|
-| слайды | `ru/slides/planned/<slug>.qmd` | `ru/slides/00_python_numpy_numba.qmd` |
-| ноутбук | `ru/slides/planned/notebooks/<slug>.qmd` | `ru/slides/notebooks/00_python_numpy_numba.qmd` |
-| глава книги | `ru/book/planned/<slug>.qmd` | `ru/book/chapters/00_python_numpy_numba.qmd` |
-| задачи | `_includes/exercises/planned/<slug>-ru.qmd` | `_includes/exercises/00_python_numpy_numba-ru.qmd` |
+| слайды | `ru/slides/planned/<slug>.qmd` | `ru/slides/01_python_numpy_numba.qmd` |
+| ноутбук | `ru/slides/planned/notebooks/<slug>.qmd` | `ru/slides/notebooks/01_python_numpy_numba.qmd` |
+| глава книги | `ru/book/planned/<slug>.qmd` | `ru/book/chapters/01_python_numpy_numba.qmd` |
+| задачи | `_includes/exercises/planned/<slug>-ru.qmd` | `_includes/exercises/01_python_numpy_numba-ru.qmd` |
 | рисунки | `shared/figures/<slug>/` | |
 
 Заготовки слайдов, главы и задач уже есть для всех лекций из программы;
@@ -47,7 +47,7 @@
 копируют их. Ноутбук пишется как `.qmd`: текст Markdown и ячейки
 
 ````markdown
-```{python}
+```{{python}}
 #| label: walk-simulate
 rng = np.random.default_rng(seed=1)
 steps = rng.choice([-1, 1], size=(2000, 1000))
@@ -59,6 +59,8 @@ steps = rng.choice([-1, 1], size=(2000, 1000))
 - Ячейка с рисунком: метка начинается с `fig-` и есть подпись,
   `#| label: fig-walk-msd` и `#| fig-cap: "..."`. С меткой без `fig-`
   рисунок при встраивании на слайд пропадает.
+- Шапку (YAML) ноутбука скопируйте из образца и поменяйте только `title`:
+  в ней настроены оглавление, раскладка страницы и разрешение рисунков.
 - В начале ноутбука — импорт и печать версий пакетов (см. образец).
 - Случайные числа — только из генератора с явным `seed`.
 - Время выполнения печатается, а не вписывается в текст числом: на другой
@@ -91,8 +93,8 @@ format: revealjs
 | список | `- пункт` |
 | формула в строке / выключная | `$\sigma\propto1/\sqrt n$` / `$$ ... $$` |
 | выделенный вывод | `::: {.takeaway}` … `:::` |
-| ячейка ноутбука с кодом и результатом | `{{< embed notebooks/<slug>.qmd#label echo=true >}}` |
-| только результат (рисунок) | `{{< embed notebooks/<slug>.qmd#fig-label >}}` |
+| ячейка ноутбука с кодом и результатом | `{{{< embed notebooks/<slug>.qmd#label echo=true >}}}` |
+| только результат (рисунок) | `{{{< embed notebooks/<slug>.qmd#fig-label >}}}` |
 | рисунок из файла | `![](shared/figures/<slug>/name.png){width=70%}` |
 | две колонки | `:::: {.columns}` `::: {.column width="50%"}` … `:::` `::::` |
 | пошаговый показ | строка `. . .` между частями слайда |
@@ -113,7 +115,7 @@ format: revealjs
 - Рисунок: ячейка с `#| label: fig-имя` и `#| fig-cap: "..."`; ссылка в
   тексте — `@fig-имя`.
 - Формула с номером: `$$ ... $$ {#eq-имя}`, ссылка — `@eq-имя`.
-- Задачи подключаются в конце главы строкой `{{< include ... >}}` (см. образец).
+- Задачи подключаются в конце главы строкой `{{{< include ... >}}}` (см. образец).
 - Книга собирается и в PDF, поэтому в тексте нет HTML и интерактивных
   элементов.
 

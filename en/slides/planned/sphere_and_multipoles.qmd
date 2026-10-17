@@ -7,7 +7,7 @@ format: revealjs
 
 ## Lecture outline (draft)
 
-Legendre polynomials and spherical harmonics, the addition theorem, Gauss–Legendre quadrature in $\cos\theta$, expansion of a map on a sphere and the power spectrum $C_\ell$. Gauss nodes as an eigenvalue problem (lecture 3).
+Legendre polynomials and spherical harmonics, the addition theorem, Gauss–Legendre quadrature in $\cos\theta$, expansion of a map on a sphere and the power spectrum $C_\ell$. Gauss nodes as an eigenvalue problem (lecture 4).
 
 - **Problem:** The potential of a dipole and a multipole (the reference), the gravitational field of the Earth, the temperature map of the microwave background as a striking example of a field on a sphere.
 - **Tools:** $Y_{\ell m}$, Gauss–Legendre quadrature, stability of recurrence relations, analysis and synthesis of a map.
@@ -42,7 +42,7 @@ Lecture in preparation.
 
 ## How it works in LightHit
 
-Expansion of the Henyey–Greenstein scattering phase function in Legendre polynomials (lecture 15).
+Expansion of the Henyey–Greenstein scattering phase function in Legendre polynomials (lecture 16).
 
 # Summary
 

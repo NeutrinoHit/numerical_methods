@@ -1,0 +1,6 @@
+# Page options for the guides rendered on the course site (root _quarto.yml).
+format:
+  html:
+    page-layout: article
+    toc: true
+    toc-title: "Содержание"

@@ -7,7 +7,7 @@ format: revealjs
 
 ## Lecture outline (draft)
 
-The singular value decomposition, the condition number, the pseudo-inverse, truncated SVD and Tikhonov regularization, best low-rank approximation. Convolution with the detector resolution and its inversion through the FFT (lecture 7).
+The singular value decomposition, the condition number, the pseudo-inverse, truncated SVD and Tikhonov regularization, best low-rank approximation. Convolution with the detector resolution and its inversion through the FFT (lecture 8).
 
 - **Problem:** A reactor experiment (like Daya Bay or JUNO): the spectrum of positrons from inverse beta decay is measured, but the antineutrino spectrum is needed. The measured spectrum is the response matrix (cross section, kinematics, energy resolution) applied to the true spectrum. Naive inversion amplifies noise; the reference is a known true spectrum in a model experiment.
 - **Tools:** the SVD, the pseudo-inverse, regularization, low rank; the Cholesky factorization for generating correlated errors (link to the statistics course).
@@ -42,7 +42,7 @@ Lecture in preparation.
 
 ## How it works in LightHit
 
-The POD basis of a shower — compression of reusable computations (lecture 16).
+The POD basis of a shower — compression of reusable computations (lecture 17).
 
 # Summary
 

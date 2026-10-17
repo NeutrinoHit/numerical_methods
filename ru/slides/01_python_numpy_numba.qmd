@@ -1,5 +1,5 @@
 ---
-title: "Нулевая лекция: Python, NumPy и Numba"
+title: "Python, NumPy и Numba"
 subtitle: "Численные методы для физиков"
 author: "Дмитрий В. Наумов"
 format: revealjs
@@ -17,8 +17,8 @@ format: revealjs
 чисел, генератор случайных чисел с `seed`, графики, измерение времени, Numba.
 
 ::: {.takeaway}
-Ноутбук лекции: [открыть](notebooks/00_python_numpy_numba.html) ·
-[скачать .ipynb](notebooks/00_python_numpy_numba.ipynb)
+Ноутбук лекции: [открыть](notebooks/01_python_numpy_numba.html) ·
+[скачать .ipynb](notebooks/01_python_numpy_numba.ipynb)
 :::
 
 # Физическая задача
@@ -83,7 +83,7 @@ $$
 
 ## Версии — в начале каждого ноутбука
 
-{{< embed notebooks/00_python_numpy_numba.qmd#versions echo=true >}}
+{{< embed notebooks/01_python_numpy_numba.qmd#versions echo=true >}}
 
 Результат воспроизводим, только если известно, чем он получен.
 
@@ -91,18 +91,18 @@ $$
 
 ## Цикл Python против массива
 
-{{< embed notebooks/00_python_numpy_numba.qmd#loop-vs-numpy echo=true >}}
+{{< embed notebooks/01_python_numpy_numba.qmd#loop-vs-numpy echo=true >}}
 
 Цикл Python на каждом шаге проверяет типы; NumPy выполняет цикл в
 скомпилированном коде над непрерывным блоком памяти.
 
 ## Форма, тип, срезы
 
-{{< embed notebooks/00_python_numpy_numba.qmd#arrays echo=true >}}
+{{< embed notebooks/01_python_numpy_numba.qmd#arrays echo=true >}}
 
 ## Срез — вид, а не копия
 
-{{< embed notebooks/00_python_numpy_numba.qmd#view-copy echo=true >}}
+{{< embed notebooks/01_python_numpy_numba.qmd#view-copy echo=true >}}
 
 ::: {.takeaway}
 Изменение среза меняет исходный массив. Нужна независимая копия — `.copy()`.
@@ -110,7 +110,7 @@ $$
 
 ## Broadcasting
 
-{{< embed notebooks/00_python_numpy_numba.qmd#broadcasting echo=true >}}
+{{< embed notebooks/01_python_numpy_numba.qmd#broadcasting echo=true >}}
 
 Размерности сравниваются справа; размерность 1 растягивается.
 
@@ -118,14 +118,14 @@ $$
 
 ## Машинная точность
 
-{{< embed notebooks/00_python_numpy_numba.qmd#floats echo=true >}}
+{{< embed notebooks/01_python_numpy_numba.qmd#floats echo=true >}}
 
 $\varepsilon$ — наименьшее число, для которого $1+\varepsilon\ne1$. Сравнивать
 вещественные числа на точное равенство нельзя.
 
 ## Порядок суммирования важен
 
-{{< embed notebooks/00_python_numpy_numba.qmd#float32-sum echo=true >}}
+{{< embed notebooks/01_python_numpy_numba.qmd#float32-sum echo=true >}}
 
 Точный ответ $10^6$. Когда сумма велика, прибавка $0.1$ округляется;
 `np.sum` складывает попарно, и ошибка растёт медленнее.
@@ -134,7 +134,7 @@ $\varepsilon$ — наименьшее число, для которого $1+\v
 
 ## Генератор с `seed`
 
-{{< embed notebooks/00_python_numpy_numba.qmd#rng echo=true >}}
+{{< embed notebooks/01_python_numpy_numba.qmd#rng echo=true >}}
 
 Один генератор на расчёт, `seed` записан в коде: результат повторяется.
 
@@ -142,18 +142,18 @@ $\varepsilon$ — наименьшее число, для которого $1+\v
 
 ## Моделирование
 
-{{< embed notebooks/00_python_numpy_numba.qmd#walk-simulate echo=true >}}
+{{< embed notebooks/01_python_numpy_numba.qmd#walk-simulate echo=true >}}
 
 Отклонение $\langle x_N^2\rangle$ от $N$ сравниваем со статистической ошибкой
 $\sqrt{2/M}\approx3\%$, а не с нулём.
 
 ## Проверка по эталону
 
-{{< embed notebooks/00_python_numpy_numba.qmd#fig-walk-msd >}}
+{{< embed notebooks/01_python_numpy_numba.qmd#fig-walk-msd >}}
 
 ## Распределение и ловушка чётности
 
-{{< embed notebooks/00_python_numpy_numba.qmd#fig-walk-hist >}}
+{{< embed notebooks/01_python_numpy_numba.qmd#fig-walk-hist >}}
 
 $x_N$ той же чётности, что $N$: значения идут через 2, вероятность вдвое больше плотности.
 
@@ -161,11 +161,11 @@ $x_N$ той же чётности, что $N$: значения идут чер
 
 ## Векторизованная оценка
 
-{{< embed notebooks/00_python_numpy_numba.qmd#pi-numpy echo=true >}}
+{{< embed notebooks/01_python_numpy_numba.qmd#pi-numpy echo=true >}}
 
 ## Сходимость $1/\sqrt n$
 
-{{< embed notebooks/00_python_numpy_numba.qmd#fig-pi-convergence >}}
+{{< embed notebooks/01_python_numpy_numba.qmd#fig-pi-convergence >}}
 
 Ещё один верный знак стоит в 100 раз больше точек. При $n=10^8$ массив
 координат занял бы 1.6 ГБ.
@@ -174,11 +174,11 @@ $x_N$ той же чётности, что $N$: значения идут чер
 
 ## Компиляция цикла
 
-{{< embed notebooks/00_python_numpy_numba.qmd#pi-numba echo=true >}}
+{{< embed notebooks/01_python_numpy_numba.qmd#pi-numba echo=true >}}
 
 ## Сколько это стоит
 
-{{< embed notebooks/00_python_numpy_numba.qmd#numba-timing echo=true >}}
+{{< embed notebooks/01_python_numpy_numba.qmd#numba-timing echo=true >}}
 
 ## Когда Numba не помогает
 
@@ -215,6 +215,6 @@ Numba нужна для циклов, которые не векторизуют
 
 ## Задачи
 
-- [Задачи к лекции](exercises/00_python_numpy_numba_exercises.html)
-- [Ноутбук лекции](notebooks/00_python_numpy_numba.html) ·
-  [скачать .ipynb](notebooks/00_python_numpy_numba.ipynb)
+- [Задачи к лекции](exercises/01_python_numpy_numba_exercises.html)
+- [Ноутбук лекции](notebooks/01_python_numpy_numba.html) ·
+  [скачать .ipynb](notebooks/01_python_numpy_numba.ipynb)

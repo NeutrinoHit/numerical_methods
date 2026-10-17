@@ -42,7 +42,7 @@ Lecture in preparation.
 
 ## How it works in LightHit
 
-Diffusion is the limit of photon transport in a turbid medium (lecture 15).
+Diffusion is the limit of photon transport in a turbid medium (lecture 16).
 
 # Summary
 

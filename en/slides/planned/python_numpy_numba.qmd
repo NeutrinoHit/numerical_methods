@@ -1,5 +1,5 @@
 ---
-title: "Lecture zero: Python, NumPy and Numba"
+title: "Python, NumPy and Numba"
 subtitle: "Numerical Methods for Physicists"
 author: "Dmitry V. Naumov"
 format: revealjs

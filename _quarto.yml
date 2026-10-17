@@ -5,6 +5,9 @@ project:
   # в ru/slides, en/slides, ru/book, en/book; см. Makefile.
   render:
     - index.qmd
+    - docs/git-guide.md
+    - docs/quarto-guide.md
+    - docs/authoring-guide.md
   resources:
     - /shared/figures/dvnlogo.png
 

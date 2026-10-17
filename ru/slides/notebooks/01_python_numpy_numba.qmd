@@ -1,5 +1,5 @@
 ---
-title: "Ноутбук к лекции 0: Python, NumPy и Numba"
+title: "Ноутбук к лекции 1: Python, NumPy и Numba"
 subtitle: "Численные методы для физиков"
 author: "Дмитрий В. Наумов"
 lang: ru
@@ -7,6 +7,8 @@ jupyter: python3
 fig-dpi: 200
 format:
   html:
+    page-layout: article
+    body-classes: notebook-page
     toc: true
     number-sections: true
 execute:
@@ -14,13 +16,13 @@ execute:
   warning: false
 ---
 
-Этот ноутбук — рабочая часть нулевой лекции. Две физические задачи —
+Этот ноутбук — рабочая часть первой лекции. Две физические задачи —
 случайное блуждание и оценка $\pi$ методом Монте-Карло — имеют точный ответ,
 и на них видно, как устроены массивы NumPy, где теряется точность, как
 измерять время и когда помогает Numba.
 
 **Как запустить.** Скачайте ноутбук:
-[00_python_numpy_numba.ipynb](00_python_numpy_numba.ipynb). Дальше один из
+[01_python_numpy_numba.ipynb](01_python_numpy_numba.ipynb). Дальше один из
 двух путей:
 
 - на своём компьютере: `python -m pip install numpy matplotlib numba jupyterlab`,

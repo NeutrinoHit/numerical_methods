@@ -7,7 +7,7 @@ format: revealjs
 
 ## Lecture outline (draft)
 
-Profiling, vectorization and Numba, reuse of computations (caching, low rank from lecture 12), tests on analytic limits, the method of manufactured solutions, error budgets.
+Profiling, vectorization and Numba, reuse of computations (caching, low rank from lecture 13), tests on analytic limits, the method of manufactured solutions, error budgets.
 
 - **Problem:** How to make sure that a fast calculation gives the right answer, and what the speed-up costs.
 - **Tools:** profiling, Numba (njit, parallel, the risks of fastmath), caching, regression and convergence tests.

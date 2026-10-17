@@ -1,12 +1,12 @@
 ---
 title: "The transport equation: from Boltzmann to light in water"
-description: "The collision integral, the mean free path, the transport problem. Methods: Monte Carlo (the random walk of a photon), the diffusion approximation, expansion in angular moments (lecture 11). Comparison of cost and accuracy."
+description: "The collision integral, the mean free path, the transport problem. Methods: Monte Carlo (the random walk of a photon), the diffusion approximation, expansion in angular moments (lecture 12). Comparison of cost and accuracy."
 ---
 
 ::: {.chapter-opening}
 <span>Abstract</span>
 
-The collision integral, the mean free path, the transport problem. Methods: Monte Carlo (the random walk of a photon), the diffusion approximation, expansion in angular moments (lecture 11). Comparison of cost and accuracy.
+The collision integral, the mean free path, the transport problem. Methods: Monte Carlo (the random walk of a photon), the diffusion approximation, expansion in angular moments (lecture 12). Comparison of cost and accuracy.
 
 Chapter in preparation.
 :::

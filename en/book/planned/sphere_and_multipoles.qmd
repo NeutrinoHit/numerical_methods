@@ -1,12 +1,12 @@
 ---
 title: "Functions on the sphere: multipoles and sky maps"
-description: "Legendre polynomials and spherical harmonics, the addition theorem, Gauss–Legendre quadrature in $\\cos\\theta$, expansion of a map on a sphere and the power spectrum $C_\\ell$. Gauss nodes as an eigenvalue problem (lecture 3)."
+description: "Legendre polynomials and spherical harmonics, the addition theorem, Gauss–Legendre quadrature in $\\cos\\theta$, expansion of a map on a sphere and the power spectrum $C_\\ell$. Gauss nodes as an eigenvalue problem (lecture 4)."
 ---
 
 ::: {.chapter-opening}
 <span>Abstract</span>
 
-Legendre polynomials and spherical harmonics, the addition theorem, Gauss–Legendre quadrature in $\cos\theta$, expansion of a map on a sphere and the power spectrum $C_\ell$. Gauss nodes as an eigenvalue problem (lecture 3).
+Legendre polynomials and spherical harmonics, the addition theorem, Gauss–Legendre quadrature in $\cos\theta$, expansion of a map on a sphere and the power spectrum $C_\ell$. Gauss nodes as an eigenvalue problem (lecture 4).
 
 Chapter in preparation.
 :::
@@ -27,7 +27,7 @@ Chapter in preparation.
 
 ## Sidebar: LightHit
 
-Expansion of the Henyey–Greenstein scattering phase function in Legendre polynomials (lecture 15).
+Expansion of the Henyey–Greenstein scattering phase function in Legendre polynomials (lecture 16).
 
 ## Exercises
 
