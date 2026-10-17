@@ -42,5 +42,5 @@ format:
     logo: shared/figures/dvnlogo.png
     include-after-body:
       - text: |
-          <script data-external="1" data-context-home="https://neutrinohit.github.io/numerical_methods/" data-context-home-label="Course home" src="shared/reveal/neutrinohit-reveal-footer.js"></script>
+          <script data-external="1" data-context-home="https://neutrinohit.github.io/en/courses/numerical-methods.html" data-context-home-label="Course page" src="shared/reveal/neutrinohit-reveal-footer.js"></script>
       - shared/html/cloudflare-web-analytics.html
