@@ -1,12 +1,12 @@
 ---
-title: "Heat conduction and diffusion"
-description: "The explicit scheme and its stability condition, the implicit scheme and tridiagonal solver, Crank–Nicolson. Comparison with the Green function; inhomogeneous and nonlinear media; the random walk as the microscopic picture."
+title: "Diffusion and random forces"
+description: "Cooling of a rod (the reference is the Green function), nonlinear and inhomogeneous media; a Brownian particle under a random force, continuing the random walk of lecture 1."
 ---
 
 ::: {.chapter-opening}
 <span>Abstract</span>
 
-The explicit scheme and its stability condition, the implicit scheme and tridiagonal solver, Crank–Nicolson. Comparison with the Green function; inhomogeneous and nonlinear media; the random walk as the microscopic picture.
+Cooling of a rod (the reference is the Green function), nonlinear and inhomogeneous media; a Brownian particle under a random force, continuing the random walk of lecture 1.
 
 Chapter in preparation.
 :::

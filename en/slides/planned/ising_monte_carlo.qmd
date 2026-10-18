@@ -1,0 +1,44 @@
+---
+title: "Monte Carlo in statistical physics: the Ising model"
+subtitle: "Numerical Methods for Physicists"
+author: "Kirill Bazarov, Dmitry V. Naumov"
+format: revealjs
+---
+
+## Lecture outline (draft)
+
+- **Problem:** The two-dimensional Ising model: the phase transition, the critical temperature and thermodynamic quantities; the reference is Onsager's exact solution.
+- **Tools:** the Metropolis algorithm, autocorrelation and errors, finite-size effects, heat capacity and susceptibility, Numba acceleration.
+- **Lead author:** Kirill Bazarov.
+
+::: {.takeaway}
+Lecture in preparation.
+:::
+
+# Physical problem
+
+## Setting
+
+# Analytic reference point
+
+## What is solved exactly
+
+## Where analytics ends
+
+# Numerical method
+
+## The idea
+
+## Accuracy, stability, cost
+
+# Code and experiments
+
+## Implementation in Python
+
+## Pitfalls
+
+# Summary
+
+## What we take with us
+
+## Exercises

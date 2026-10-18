@@ -1,16 +1,15 @@
 ---
 title: "Waves and the telegraph equation"
 subtitle: "Numerical Methods for Physicists"
-author: "Dmitry V. Naumov"
+author: "Dmitry V. Naumov, Kirill Bazarov"
 format: revealjs
 ---
 
 ## Lecture outline (draft)
 
-The wave equation, the CFL condition, numerical dispersion and dissipation; upwind, Lax–Wendroff and leapfrog schemes. The telegraph equation as a bridge between waves and diffusion.
-
-- **Problem:** A string and a lossy transmission line. The reference is d'Alembert's solution and the Heaviside signal; damping and inhomogeneities change the picture.
-- **Tools:** the method of characteristics, the CFL condition, numerical dispersion, absorbing boundary conditions.
+- **Problem:** A string (the reference is d'Alembert's solution) and a lossy transmission line (Heaviside's signal): the third type of equation after Poisson and heat conduction.
+- **Tools:** characteristics, the Courant condition, numerical dispersion, absorbing boundaries.
+- **Lead author:** Dmitry V. Naumov.
 
 ::: {.takeaway}
 Lecture in preparation.

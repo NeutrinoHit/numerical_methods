@@ -1,0 +1,30 @@
+---
+title: "Roots and quadratures"
+description: "The period of a pendulum at large amplitude (an elliptic integral) and the energy levels of a finite well (a transcendental equation): the exact answer is known, and one sees how numerical methods converge to it."
+---
+
+::: {.chapter-opening}
+<span>Abstract</span>
+
+The period of a pendulum at large amplitude (an elliptic integral) and the energy levels of a finite well (a transcendental equation): the exact answer is known, and one sees how numerical methods converge to it.
+
+Chapter in preparation.
+:::
+
+## Physical problem
+
+## Analytic reference point
+
+## Where analytics ends
+
+## Numerical method
+
+## Accuracy, stability, cost
+
+## Code and experiments
+
+## Pitfalls
+
+## Exercises
+
+{{< include ../../../_includes/exercises/planned/roots_and_quadratures-en.qmd >}}

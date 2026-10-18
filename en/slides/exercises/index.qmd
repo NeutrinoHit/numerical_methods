@@ -12,19 +12,19 @@ format:
 Exercises for the lectures (drafts):
 
 01. Python, NumPy and Numba — *in preparation*
-02. The pendulum: how a numerical method goes wrong — *in preparation*
-03. Chaos: the double pendulum and the three-body problem — *in preparation*
-04. Coupled oscillators and normal modes — *in preparation*
-05. Electrostatics: the Poisson equation and large linear systems — *in preparation*
-06. Heat conduction and diffusion — *in preparation*
-07. Waves and the telegraph equation — *in preparation*
-08. Fourier analysis: frequencies in a signal and spectral solution of equations — *in preparation*
-09. The Schrödinger equation: energy levels — *in preparation*
-10. Quantum evolution: wave packets, tunnelling, neutrino oscillations — *in preparation*
-11. Cosmology: the expansion of the Universe and «freeze-out» — *in preparation*
-12. Functions on the sphere: multipoles and sky maps — *in preparation*
-13. Inverse problems: the reactor antineutrino spectrum and the SVD — *in preparation*
-14. Hydrodynamics I: conservation laws and shock waves — *in preparation*
-15. Hydrodynamics II: vortices and two-dimensional turbulence — *in preparation*
+02. Roots and quadratures — *in preparation*
+03. Ordinary differential equations: the pendulum — *in preparation*
+04. Eigenvalue problems: normal modes — *in preparation*
+05. Chaos and synchronization — *in preparation*
+06. Electrostatics: the Poisson equation and multipoles — *in preparation*
+07. Diffusion and random forces — *in preparation*
+08. Waves and the telegraph equation — *in preparation*
+09. Fourier analysis and the FFT — *in preparation*
+10. Stationary quantum mechanics — *in preparation*
+11. Quantum evolution and neutrino oscillations — *in preparation*
+12. Interpolation and approximation — *in preparation*
+13. Monte Carlo in statistical physics: the Ising model — *in preparation*
+14. Inverse problems: the reactor antineutrino spectrum and the SVD — *in preparation*
+15. Hydrodynamics: shock waves and vortices — *in preparation*
 16. The transport equation: from Boltzmann to light in water — *in preparation*
-17. Fast computations and verification: from a prototype to production code — *in preparation*
+17. Machine learning for differential equations — *in preparation*

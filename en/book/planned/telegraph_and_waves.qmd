@@ -1,12 +1,12 @@
 ---
 title: "Waves and the telegraph equation"
-description: "The wave equation, the CFL condition, numerical dispersion and dissipation; upwind, Lax–Wendroff and leapfrog schemes. The telegraph equation as a bridge between waves and diffusion."
+description: "A string (the reference is d'Alembert's solution) and a lossy transmission line (Heaviside's signal): the third type of equation after Poisson and heat conduction."
 ---
 
 ::: {.chapter-opening}
 <span>Abstract</span>
 
-The wave equation, the CFL condition, numerical dispersion and dissipation; upwind, Lax–Wendroff and leapfrog schemes. The telegraph equation as a bridge between waves and diffusion.
+A string (the reference is d'Alembert's solution) and a lossy transmission line (Heaviside's signal): the third type of equation after Poisson and heat conduction.
 
 Chapter in preparation.
 :::

@@ -1,12 +1,12 @@
 ---
-title: "Quantum evolution: wave packets, tunnelling, neutrino oscillations"
-description: "Crank–Nicolson (unitarity), operator splitting (split-step) with the FFT, the matrix exponential and expansion in eigenvectors, adiabaticity."
+title: "Quantum evolution and neutrino oscillations"
+description: "Wave packets and tunnelling; $2\\nu$ oscillations (exact) and $3\\nu$ oscillations in matter of varying density."
 ---
 
 ::: {.chapter-opening}
 <span>Abstract</span>
 
-Crank–Nicolson (unitarity), operator splitting (split-step) with the FFT, the matrix exponential and expansion in eigenvectors, adiabaticity.
+Wave packets and tunnelling; $2\nu$ oscillations (exact) and $3\nu$ oscillations in matter of varying density.
 
 Chapter in preparation.
 :::

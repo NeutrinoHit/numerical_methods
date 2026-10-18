@@ -1,12 +1,12 @@
 ---
-title: "Fourier analysis: frequencies in a signal and spectral solution of equations"
-description: "The DFT and FFT, aliasing, spectral leakage and windows, the convolution theorem, spectral differentiation and exponential accuracy, the Gibbs phenomenon."
+title: "Fourier analysis and the FFT"
+description: "Frequencies in a noisy signal; solving the diffusion and wave equations in Fourier space; the momentum representation in quantum mechanics."
 ---
 
 ::: {.chapter-opening}
 <span>Abstract</span>
 
-The DFT and FFT, aliasing, spectral leakage and windows, the convolution theorem, spectral differentiation and exponential accuracy, the Gibbs phenomenon.
+Frequencies in a noisy signal; solving the diffusion and wave equations in Fourier space; the momentum representation in quantum mechanics.
 
 Chapter in preparation.
 :::

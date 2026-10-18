@@ -1,16 +1,15 @@
 ---
-title: "Fourier analysis: frequencies in a signal and spectral solution of equations"
+title: "Fourier analysis and the FFT"
 subtitle: "Numerical Methods for Physicists"
-author: "Dmitry V. Naumov"
+author: "Kirill Bazarov, Dmitry V. Naumov"
 format: revealjs
 ---
 
 ## Lecture outline (draft)
 
-The DFT and FFT, aliasing, spectral leakage and windows, the convolution theorem, spectral differentiation and exponential accuracy, the Gibbs phenomenon.
-
-- **Problem:** Find periods in a noisy signal; solve diffusion and waves in Fourier space. The reference is known harmonics and exact solutions with periodic boundary conditions.
-- **Tools:** the FFT, windows, convolution via the FFT, spectral derivatives, dealiasing.
+- **Problem:** Frequencies in a noisy signal; solving the diffusion and wave equations in Fourier space; the momentum representation in quantum mechanics.
+- **Tools:** the FFT, aliasing, windows, convolution, spectral derivatives.
+- **Lead author:** Kirill Bazarov.
 
 ::: {.takeaway}
 Lecture in preparation.

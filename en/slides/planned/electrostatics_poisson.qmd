@@ -1,16 +1,15 @@
 ---
-title: "Electrostatics: the Poisson equation and large linear systems"
+title: "Electrostatics: the Poisson equation and multipoles"
 subtitle: "Numerical Methods for Physicists"
-author: "Dmitry V. Naumov"
+author: "Kirill Bazarov, Dmitry V. Naumov"
 format: revealjs
 ---
 
 ## Lecture outline (draft)
 
-A finite-difference scheme turns the equation into a linear system with $N^2$ unknowns. Direct (LU, Cholesky) and iterative (Jacobi, Seidel, conjugate gradients) methods; what accuracy costs.
-
-- **Problem:** The potential of charged conductors in a box. The reference is the parallel-plate capacitor and the Fourier series for a rectangle; a complicated geometry has no analytic solution.
-- **Tools:** sparse matrices, LU and Cholesky, Jacobi, Seidel and conjugate-gradient iterations, the condition number, the idea of the multigrid method.
+- **Problem:** The potential of conductors in a box (the reference is a capacitor and a Fourier series); a non-conducting sphere with charge density $\sigma(\theta,\varphi)$: the field inside and outside, exact via spherical harmonics.
+- **Tools:** sparse matrices, LU and Cholesky, Jacobi, Gauss–Seidel and conjugate gradient iterations, the multipole expansion, $Y_{\ell m}$, Gauss–Legendre quadrature.
+- **Lead author:** Kirill Bazarov.
 
 ::: {.takeaway}
 Lecture in preparation.
@@ -37,6 +36,12 @@ Lecture in preparation.
 ## Implementation in Python
 
 ## Pitfalls
+
+# Sidebar: LightHit
+
+## How it works in LightHit
+
+Expansion of the Henyey–Greenstein scattering phase function in Legendre polynomials (lecture 16).
 
 # Summary
 

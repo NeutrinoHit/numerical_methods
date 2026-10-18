@@ -1,12 +1,12 @@
 ---
-title: "Chaos: the double pendulum and the three-body problem"
-description: "Adaptive step size and error control, the Lyapunov exponent, Poincaré sections. Why an «exact» numerical solution of a chaotic system is impossible and what then counts as a result."
+title: "Chaos and synchronization"
+description: "The double pendulum, the restricted three-body problem, Kuramoto oscillators. Why an «exact» solution of a chaotic system is impossible and what counts as a result then."
 ---
 
 ::: {.chapter-opening}
 <span>Abstract</span>
 
-Adaptive step size and error control, the Lyapunov exponent, Poincaré sections. Why an «exact» numerical solution of a chaotic system is impossible and what then counts as a result.
+The double pendulum, the restricted three-body problem, Kuramoto oscillators. Why an «exact» solution of a chaotic system is impossible and what counts as a result then.
 
 Chapter in preparation.
 :::

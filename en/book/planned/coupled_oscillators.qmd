@@ -1,12 +1,12 @@
 ---
-title: "Coupled oscillators and normal modes"
-description: "A chain of $N$ masses: the stiffness matrix, eigenvalues and eigenvectors, the dispersion relation. The limit $N\\to\\infty$ gives the wave equation."
+title: "Eigenvalue problems: normal modes"
+description: "A chain of $N$ masses and phonons; random masses lead to localization. The limit $N\\to\\infty$ gives the wave equation."
 ---
 
 ::: {.chapter-opening}
 <span>Abstract</span>
 
-A chain of $N$ masses: the stiffness matrix, eigenvalues and eigenvectors, the dispersion relation. The limit $N\to\infty$ gives the wave equation.
+A chain of $N$ masses and phonons; random masses lead to localization. The limit $N\to\infty$ gives the wave equation.
 
 Chapter in preparation.
 :::

@@ -1,0 +1,30 @@
+---
+title: "Monte Carlo in statistical physics: the Ising model"
+description: "The two-dimensional Ising model: the phase transition, the critical temperature and thermodynamic quantities; the reference is Onsager's exact solution."
+---
+
+::: {.chapter-opening}
+<span>Abstract</span>
+
+The two-dimensional Ising model: the phase transition, the critical temperature and thermodynamic quantities; the reference is Onsager's exact solution.
+
+Chapter in preparation.
+:::
+
+## Physical problem
+
+## Analytic reference point
+
+## Where analytics ends
+
+## Numerical method
+
+## Accuracy, stability, cost
+
+## Code and experiments
+
+## Pitfalls
+
+## Exercises
+
+{{< include ../../../_includes/exercises/planned/ising_monte_carlo-en.qmd >}}

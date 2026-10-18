@@ -1,12 +1,12 @@
 ---
-title: "Electrostatics: the Poisson equation and large linear systems"
-description: "A finite-difference scheme turns the equation into a linear system with $N^2$ unknowns. Direct (LU, Cholesky) and iterative (Jacobi, Seidel, conjugate gradients) methods; what accuracy costs."
+title: "Electrostatics: the Poisson equation and multipoles"
+description: "The potential of conductors in a box (the reference is a capacitor and a Fourier series); a non-conducting sphere with charge density $\\sigma(\\theta,\\varphi)$: the field inside and outside, exact via spherical harmonics."
 ---
 
 ::: {.chapter-opening}
 <span>Abstract</span>
 
-A finite-difference scheme turns the equation into a linear system with $N^2$ unknowns. Direct (LU, Cholesky) and iterative (Jacobi, Seidel, conjugate gradients) methods; what accuracy costs.
+The potential of conductors in a box (the reference is a capacitor and a Fourier series); a non-conducting sphere with charge density $\sigma(\theta,\varphi)$: the field inside and outside, exact via spherical harmonics.
 
 Chapter in preparation.
 :::
@@ -24,6 +24,10 @@ Chapter in preparation.
 ## Code and experiments
 
 ## Pitfalls
+
+## Sidebar: LightHit
+
+Expansion of the Henyey–Greenstein scattering phase function in Legendre polynomials (lecture 16).
 
 ## Exercises
 

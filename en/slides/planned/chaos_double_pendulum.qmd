@@ -1,16 +1,15 @@
 ---
-title: "Chaos: the double pendulum and the three-body problem"
+title: "Chaos and synchronization"
 subtitle: "Numerical Methods for Physicists"
-author: "Dmitry V. Naumov"
+author: "Kirill Bazarov, Dmitry V. Naumov"
 format: revealjs
 ---
 
 ## Lecture outline (draft)
 
-Adaptive step size and error control, the Lyapunov exponent, Poincaré sections. Why an «exact» numerical solution of a chaotic system is impossible and what then counts as a result.
-
-- **Problem:** The double pendulum, the restricted three-body problem, the Hénon–Heiles model; conserved quantities as a check of the computation.
-- **Tools:** adaptive Runge–Kutta methods (solve_ivp), the Lyapunov exponent, the Poincaré section, ensembles of trajectories and Numba acceleration.
+- **Problem:** The double pendulum, the restricted three-body problem, Kuramoto oscillators. Why an «exact» solution of a chaotic system is impossible and what counts as a result then.
+- **Tools:** adaptive Runge–Kutta methods (`solve_ivp`), the Lyapunov exponent, Poincaré sections, the order parameter, trajectory ensembles with Numba.
+- **Lead author:** Kirill Bazarov.
 
 ::: {.takeaway}
 Lecture in preparation.

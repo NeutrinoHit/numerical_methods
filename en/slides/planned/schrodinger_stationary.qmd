@@ -1,16 +1,15 @@
 ---
-title: "The Schrödinger equation: energy levels"
+title: "Stationary quantum mechanics"
 subtitle: "Numerical Methods for Physicists"
-author: "Dmitry V. Naumov"
+author: "Kirill Bazarov, Dmitry V. Naumov"
 format: revealjs
 ---
 
 ## Lecture outline (draft)
 
-The Hamiltonian as a matrix (finite differences and a basis), shooting and the Numerov method, convergence of levels, the variational principle.
-
-- **Problem:** A well and an oscillator (the reference is the exact levels), an anharmonic oscillator and a double well (no analytic solution), the radial equation of the hydrogen atom.
-- **Tools:** diagonalization of tridiagonal matrices, shooting and root finding, the Numerov method, convergence of levels.
+- **Problem:** The oscillator (reference), the anharmonic oscillator, the double well, the hydrogen atom; scattering on a barrier.
+- **Tools:** the Hamiltonian as a matrix, shooting, Numerov, the variational method, the transmission coefficient, convergence of levels.
+- **Lead author:** Kirill Bazarov.
 
 ::: {.takeaway}
 Lecture in preparation.

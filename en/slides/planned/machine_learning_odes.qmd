@@ -1,0 +1,44 @@
+---
+title: "Machine learning for differential equations"
+subtitle: "Numerical Methods for Physicists"
+author: "Kirill Bazarov, Dmitry V. Naumov"
+format: revealjs
+---
+
+## Lecture outline (draft)
+
+- **Problem:** The oscillator and the heat equation with known solutions: what a neural network gives and what it costs compared with classical methods.
+- **Tools:** a neural network as an approximator, physics-informed networks (PINN), comparison with classical methods in accuracy and cost.
+- **Lead author:** Kirill Bazarov.
+
+::: {.takeaway}
+Lecture in preparation.
+:::
+
+# Physical problem
+
+## Setting
+
+# Analytic reference point
+
+## What is solved exactly
+
+## Where analytics ends
+
+# Numerical method
+
+## The idea
+
+## Accuracy, stability, cost
+
+# Code and experiments
+
+## Implementation in Python
+
+## Pitfalls
+
+# Summary
+
+## What we take with us
+
+## Exercises

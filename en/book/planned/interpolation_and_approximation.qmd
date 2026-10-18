@@ -1,0 +1,30 @@
+---
+title: "Interpolation and approximation"
+description: "Reconstruct a function from points when the function itself is known (the reference), and see why more nodes are not always better."
+---
+
+::: {.chapter-opening}
+<span>Abstract</span>
+
+Reconstruct a function from points when the function itself is known (the reference), and see why more nodes are not always better.
+
+Chapter in preparation.
+:::
+
+## Physical problem
+
+## Analytic reference point
+
+## Where analytics ends
+
+## Numerical method
+
+## Accuracy, stability, cost
+
+## Code and experiments
+
+## Pitfalls
+
+## Exercises
+
+{{< include ../../../_includes/exercises/planned/interpolation_and_approximation-en.qmd >}}

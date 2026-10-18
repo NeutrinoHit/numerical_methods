@@ -1,12 +1,12 @@
 ---
 title: "The transport equation: from Boltzmann to light in water"
-description: "The collision integral, the mean free path, the transport problem. Methods: Monte Carlo (the random walk of a photon), the diffusion approximation, expansion in angular moments (lecture 12). Comparison of cost and accuracy."
+description: "A photon in a turbid medium: ballistics, diffusion (lecture 7), finite speed (lecture 8). The example is light in Lake Baikal and a neutrino telescope."
 ---
 
 ::: {.chapter-opening}
 <span>Abstract</span>
 
-The collision integral, the mean free path, the transport problem. Methods: Monte Carlo (the random walk of a photon), the diffusion approximation, expansion in angular moments (lecture 12). Comparison of cost and accuracy.
+A photon in a turbid medium: ballistics, diffusion (lecture 7), finite speed (lecture 8). The example is light in Lake Baikal and a neutrino telescope.
 
 Chapter in preparation.
 :::

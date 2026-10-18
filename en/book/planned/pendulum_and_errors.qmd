@@ -1,12 +1,12 @@
 ---
-title: "The pendulum: how a numerical method goes wrong"
-description: "From Euler to Runge–Kutta and Verlet: order of accuracy, local and global error, stability, energy conservation, the convergence test."
+title: "Ordinary differential equations: the pendulum"
+description: "The pendulum beyond small oscillations; the reference is the energy and the period from lecture 2. First the method works, then one sees where and why it fails."
 ---
 
 ::: {.chapter-opening}
 <span>Abstract</span>
 
-From Euler to Runge–Kutta and Verlet: order of accuracy, local and global error, stability, energy conservation, the convergence test.
+The pendulum beyond small oscillations; the reference is the energy and the period from lecture 2. First the method works, then one sees where and why it fails.
 
 Chapter in preparation.
 :::

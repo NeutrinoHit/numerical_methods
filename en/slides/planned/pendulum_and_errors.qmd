@@ -1,16 +1,15 @@
 ---
-title: "The pendulum: how a numerical method goes wrong"
+title: "Ordinary differential equations: the pendulum"
 subtitle: "Numerical Methods for Physicists"
-author: "Dmitry V. Naumov"
+author: "Kirill Bazarov, Dmitry V. Naumov"
 format: revealjs
 ---
 
 ## Lecture outline (draft)
 
-From Euler to Runge–Kutta and Verlet: order of accuracy, local and global error, stability, energy conservation, the convergence test.
-
-- **Problem:** The simple pendulum. The reference is the exact solution through elliptic integrals and small oscillations; the Euler method «heats» the energy.
-- **Tools:** floating-point numbers and machine precision, order of a method, the convergence test, the Euler, Runge–Kutta and Verlet schemes, symplecticity.
+- **Problem:** The pendulum beyond small oscillations; the reference is the energy and the period from lecture 2. First the method works, then one sees where and why it fails.
+- **Tools:** Euler, Runge–Kutta and Verlet schemes, order of accuracy and convergence test, adaptive step, events (impact, dry friction), stiffness and implicit Euler.
+- **Lead author:** Kirill Bazarov.
 
 ::: {.takeaway}
 Lecture in preparation.

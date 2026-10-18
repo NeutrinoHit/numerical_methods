@@ -81,22 +81,22 @@ toc: false
           <a href="ru/slides/exercises/01_python_numpy_numba_exercises.html">Задачи</a>
         </div>
       </article>
-      <article class="course-card is-planned"><span class="course-card-status">02 · готовится</span><h3>Маятник: как ошибается численный метод</h3></article>
-      <article class="course-card is-planned"><span class="course-card-status">03 · готовится</span><h3>Хаос: двойной маятник и задача трёх тел</h3></article>
-      <article class="course-card is-planned"><span class="course-card-status">04 · готовится</span><h3>Связанные осцилляторы и нормальные моды</h3></article>
-      <article class="course-card is-planned"><span class="course-card-status">05 · готовится</span><h3>Электростатика: уравнение Пуассона и большие линейные системы</h3></article>
-      <article class="course-card is-planned"><span class="course-card-status">06 · готовится</span><h3>Теплопроводность и диффузия</h3></article>
-      <article class="course-card is-planned"><span class="course-card-status">07 · готовится</span><h3>Волны и телеграфное уравнение</h3></article>
-      <article class="course-card is-planned"><span class="course-card-status">08 · готовится</span><h3>Фурье-анализ: частоты в сигнале и спектральное решение уравнений</h3></article>
-      <article class="course-card is-planned"><span class="course-card-status">09 · готовится</span><h3>Уравнение Шрёдингера: уровни энергии</h3></article>
-      <article class="course-card is-planned"><span class="course-card-status">10 · готовится</span><h3>Квантовая эволюция: пакеты, туннелирование, осцилляции нейтрино</h3></article>
-      <article class="course-card is-planned"><span class="course-card-status">11 · готовится</span><h3>Космология: расширение Вселенной и «замораживание»</h3></article>
-      <article class="course-card is-planned"><span class="course-card-status">12 · готовится</span><h3>Функции на сфере: мультиполи и карты неба</h3></article>
-      <article class="course-card is-planned"><span class="course-card-status">13 · готовится</span><h3>Обратные задачи: спектр реакторных антинейтрино и SVD</h3></article>
-      <article class="course-card is-planned"><span class="course-card-status">14 · готовится</span><h3>Гидродинамика I: законы сохранения и ударные волны</h3></article>
-      <article class="course-card is-planned"><span class="course-card-status">15 · готовится</span><h3>Гидродинамика II: вихри и двумерная турбулентность</h3></article>
+      <article class="course-card is-planned"><span class="course-card-status">02 · готовится</span><h3>Корни и квадратуры</h3></article>
+      <article class="course-card is-planned"><span class="course-card-status">03 · готовится</span><h3>Обыкновенные дифференциальные уравнения: маятник</h3></article>
+      <article class="course-card is-planned"><span class="course-card-status">04 · готовится</span><h3>Собственные задачи: нормальные моды</h3></article>
+      <article class="course-card is-planned"><span class="course-card-status">05 · готовится</span><h3>Хаос и синхронизация</h3></article>
+      <article class="course-card is-planned"><span class="course-card-status">06 · готовится</span><h3>Электростатика: уравнение Пуассона и мультиполи</h3></article>
+      <article class="course-card is-planned"><span class="course-card-status">07 · готовится</span><h3>Диффузия и случайные силы</h3></article>
+      <article class="course-card is-planned"><span class="course-card-status">08 · готовится</span><h3>Волны и телеграфное уравнение</h3></article>
+      <article class="course-card is-planned"><span class="course-card-status">09 · готовится</span><h3>Фурье-анализ и FFT</h3></article>
+      <article class="course-card is-planned"><span class="course-card-status">10 · готовится</span><h3>Стационарная квантовая механика</h3></article>
+      <article class="course-card is-planned"><span class="course-card-status">11 · готовится</span><h3>Квантовая эволюция и осцилляции нейтрино</h3></article>
+      <article class="course-card is-planned"><span class="course-card-status">12 · готовится</span><h3>Интерполяция и аппроксимация</h3></article>
+      <article class="course-card is-planned"><span class="course-card-status">13 · готовится</span><h3>Монте-Карло в статистической физике: модель Изинга</h3></article>
+      <article class="course-card is-planned"><span class="course-card-status">14 · готовится</span><h3>Обратные задачи: спектр реакторных антинейтрино и SVD</h3></article>
+      <article class="course-card is-planned"><span class="course-card-status">15 · готовится</span><h3>Гидродинамика: ударные волны и вихри</h3></article>
       <article class="course-card is-planned"><span class="course-card-status">16 · готовится</span><h3>Уравнение переноса: от Больцмана к свету в воде</h3></article>
-      <article class="course-card is-planned"><span class="course-card-status">17 · готовится</span><h3>Быстрые расчёты и проверка: от прототипа к рабочему коду</h3></article>
+      <article class="course-card is-planned"><span class="course-card-status">17 · готовится</span><h3>Машинное обучение для дифференциальных уравнений</h3></article>
     </div>
   </section>
 ```

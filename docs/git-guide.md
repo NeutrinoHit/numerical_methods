@@ -51,16 +51,16 @@
 
 Одна лекция — одна ветка. Имя ветки: `lec/NN-slug`, где `NN` — номер лекции
 в программе курса (страница слайдов, список «Лекции курса»), а `slug` — имя
-файла лекции, например `lec/06-heat_equation`.
+файла лекции, например `lec/07-heat_equation`.
 
 ```bash
 git switch main
 git pull
-git switch -c lec/06-heat_equation
+git switch -c lec/07-heat_equation
 ```
 
 `git switch -c` создаёт ветку. Если ветка уже есть, вернуться в неё:
-`git switch lec/06-heat_equation`.
+`git switch lec/07-heat_equation`.
 
 ## Рабочий цикл
 
@@ -85,7 +85,7 @@ git commit -m "Теплопроводность: явная схема и усл
 Отправьте ветку на GitHub (первый раз — с `-u`, дальше просто `git push`):
 
 ```bash
-git push -u origin lec/06-heat_equation
+git push -u origin lec/07-heat_equation
 ```
 
 ## Показать работу: pull request
@@ -109,7 +109,7 @@ gh pr create --base main --fill
 ```bash
 git switch main
 git pull
-git switch lec/06-heat_equation
+git switch lec/07-heat_equation
 git merge main
 ```
 

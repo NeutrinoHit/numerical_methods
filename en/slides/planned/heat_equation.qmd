@@ -1,16 +1,15 @@
 ---
-title: "Heat conduction and diffusion"
+title: "Diffusion and random forces"
 subtitle: "Numerical Methods for Physicists"
-author: "Dmitry V. Naumov"
+author: "Kirill Bazarov, Dmitry V. Naumov"
 format: revealjs
 ---
 
 ## Lecture outline (draft)
 
-The explicit scheme and its stability condition, the implicit scheme and tridiagonal solver, Crank–Nicolson. Comparison with the Green function; inhomogeneous and nonlinear media; the random walk as the microscopic picture.
-
-- **Problem:** Cooling of a rod and spreading of heat. The reference is the Green function and Fourier series; nonlinear conduction and inhomogeneous media have no analytic solution.
-- **Tools:** von Neumann stability analysis, implicit schemes, the tridiagonal (Thomas) algorithm, the method of lines, stiff systems.
+- **Problem:** Cooling of a rod (the reference is the Green function), nonlinear and inhomogeneous media; a Brownian particle under a random force, continuing the random walk of lecture 1.
+- **Tools:** explicit and implicit schemes, von Neumann stability, the tridiagonal (Thomas) algorithm, Crank–Nicolson, the method of lines, the Langevin equation (Euler–Maruyama scheme).
+- **Lead author:** Kirill Bazarov.
 
 ::: {.takeaway}
 Lecture in preparation.

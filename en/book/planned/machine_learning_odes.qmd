@@ -1,0 +1,30 @@
+---
+title: "Machine learning for differential equations"
+description: "The oscillator and the heat equation with known solutions: what a neural network gives and what it costs compared with classical methods."
+---
+
+::: {.chapter-opening}
+<span>Abstract</span>
+
+The oscillator and the heat equation with known solutions: what a neural network gives and what it costs compared with classical methods.
+
+Chapter in preparation.
+:::
+
+## Physical problem
+
+## Analytic reference point
+
+## Where analytics ends
+
+## Numerical method
+
+## Accuracy, stability, cost
+
+## Code and experiments
+
+## Pitfalls
+
+## Exercises
+
+{{< include ../../../_includes/exercises/planned/machine_learning_odes-en.qmd >}}

@@ -1,12 +1,12 @@
 ---
-title: "The Schrödinger equation: energy levels"
-description: "The Hamiltonian as a matrix (finite differences and a basis), shooting and the Numerov method, convergence of levels, the variational principle."
+title: "Stationary quantum mechanics"
+description: "The oscillator (reference), the anharmonic oscillator, the double well, the hydrogen atom; scattering on a barrier."
 ---
 
 ::: {.chapter-opening}
 <span>Abstract</span>
 
-The Hamiltonian as a matrix (finite differences and a basis), shooting and the Numerov method, convergence of levels, the variational principle.
+The oscillator (reference), the anharmonic oscillator, the double well, the hydrogen atom; scattering on a barrier.
 
 Chapter in preparation.
 :::

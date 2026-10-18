@@ -43,33 +43,17 @@ Course authors: Kirill Bazarov and Dmitry V. Naumov ([profile on NeutrinoHit](ht
 
 ::: {.lecture-accordion}
 
-
 <p class="course-kicker">Preparation</p>
 <details class="lecture-row">
 <summary><span class="lecture-index">01</span><span>Python, NumPy and Numba</span></summary>
 
 <div class="lecture-row-body">
 
-The working environment (a virtual environment, Jupyter and Quarto), Python basics, NumPy arrays and vectorization, Matplotlib plots, timing, compiling critical loops with Numba.
+The random walk ($\langle x^2\rangle=N$) and $\pi$ by Monte Carlo: why numerical methods are needed, what numerical error and convergence are, how to trade accuracy against time.
 
-**Tools:** a virtual environment, Jupyter, NumPy arrays, slicing and broadcasting, data types and precision, a seeded random number generator, Matplotlib, `%timeit`, Numba (`@njit`: when it helps and when it does not).
+**Tools:** Jupyter, NumPy arrays, slicing and broadcasting, data types and precision, a seeded random number generator, Matplotlib, timing, Numba; Python versus Mathematica.
 
-<div class="lecture-links">
-<span class="lecture-link-pending">in preparation</span>
-</div>
-
-</div>
-</details>
-
-<p class="course-kicker">Part I. Motion and oscillations</p>
-<details class="lecture-row">
-<summary><span class="lecture-index">02</span><span>The pendulum: how a numerical method goes wrong</span></summary>
-
-<div class="lecture-row-body">
-
-From Euler to Runge–Kutta and Verlet: order of accuracy, local and global error, stability, energy conservation, the convergence test.
-
-**Tools:** floating-point numbers and machine precision, order of a method, the convergence test, the Euler, Runge–Kutta and Verlet schemes, symplecticity.
+**Lead author:** Dmitry V. Naumov.
 
 <div class="lecture-links">
 <span class="lecture-link-pending">in preparation</span>
@@ -77,14 +61,17 @@ From Euler to Runge–Kutta and Verlet: order of accuracy, local and global erro
 
 </div>
 </details>
+<p class="course-kicker">Part I. Equations, matrices, motion</p>
 <details class="lecture-row">
-<summary><span class="lecture-index">03</span><span>Chaos: the double pendulum and the three-body problem</span></summary>
+<summary><span class="lecture-index">02</span><span>Roots and quadratures</span></summary>
 
 <div class="lecture-row-body">
 
-Adaptive step size and error control, the Lyapunov exponent, Poincaré sections. Why an «exact» numerical solution of a chaotic system is impossible and what then counts as a result.
+The period of a pendulum at large amplitude (an elliptic integral) and the energy levels of a finite well (a transcendental equation): the exact answer is known, and one sees how numerical methods converge to it.
 
-**Tools:** adaptive Runge–Kutta methods (solve_ivp), the Lyapunov exponent, the Poincaré section, ensembles of trajectories and Numba acceleration.
+**Tools:** bisection, Newton's method, secants; rectangles, trapezoids, Simpson, Gaussian quadrature; order of convergence, singular integrands.
+
+**Lead author:** Kirill Bazarov.
 
 <div class="lecture-links">
 <span class="lecture-link-pending">in preparation</span>
@@ -93,13 +80,15 @@ Adaptive step size and error control, the Lyapunov exponent, Poincaré sections.
 </div>
 </details>
 <details class="lecture-row">
-<summary><span class="lecture-index">04</span><span>Coupled oscillators and normal modes</span></summary>
+<summary><span class="lecture-index">03</span><span>Ordinary differential equations: the pendulum</span></summary>
 
 <div class="lecture-row-body">
 
-A chain of $N$ masses: the stiffness matrix, eigenvalues and eigenvectors, the dispersion relation. The limit $N\to\infty$ gives the wave equation.
+The pendulum beyond small oscillations; the reference is the energy and the period from lecture 2. First the method works, then one sees where and why it fails.
 
-**Tools:** a matrix as an operator, eigenproblems (eigh), tridiagonal matrices, the condition number.
+**Tools:** Euler, Runge–Kutta and Verlet schemes, order of accuracy and convergence test, adaptive step, events (impact, dry friction), stiffness and implicit Euler.
+
+**Lead author:** Kirill Bazarov.
 
 <div class="lecture-links">
 <span class="lecture-link-pending">in preparation</span>
@@ -107,16 +96,51 @@ A chain of $N$ masses: the stiffness matrix, eigenvalues and eigenvectors, the d
 
 </div>
 </details>
+<details class="lecture-row">
+<summary><span class="lecture-index">04</span><span>Eigenvalue problems: normal modes</span></summary>
 
+<div class="lecture-row-body">
+
+A chain of $N$ masses and phonons; random masses lead to localization. The limit $N\to\infty$ gives the wave equation.
+
+**Tools:** `eigh`, spectral decomposition, matrix functions (the evolution operator), tridiagonal matrices, the condition number.
+
+**Lead author:** Kirill Bazarov.
+
+<div class="lecture-links">
+<span class="lecture-link-pending">in preparation</span>
+</div>
+
+</div>
+</details>
+<details class="lecture-row">
+<summary><span class="lecture-index">05</span><span>Chaos and synchronization</span></summary>
+
+<div class="lecture-row-body">
+
+The double pendulum, the restricted three-body problem, Kuramoto oscillators. Why an «exact» solution of a chaotic system is impossible and what counts as a result then.
+
+**Tools:** adaptive Runge–Kutta methods (`solve_ivp`), the Lyapunov exponent, Poincaré sections, the order parameter, trajectory ensembles with Numba.
+
+**Lead author:** Kirill Bazarov.
+
+<div class="lecture-links">
+<span class="lecture-link-pending">in preparation</span>
+</div>
+
+</div>
+</details>
 <p class="course-kicker">Part II. Fields, diffusion and waves</p>
 <details class="lecture-row">
-<summary><span class="lecture-index">05</span><span>Electrostatics: the Poisson equation and large linear systems</span></summary>
+<summary><span class="lecture-index">06</span><span>Electrostatics: the Poisson equation and multipoles</span></summary>
 
 <div class="lecture-row-body">
 
-A finite-difference scheme turns the equation into a linear system with $N^2$ unknowns. Direct (LU, Cholesky) and iterative (Jacobi, Seidel, conjugate gradients) methods; what accuracy costs.
+The potential of conductors in a box (the reference is a capacitor and a Fourier series); a non-conducting sphere with charge density $\sigma(\theta,\varphi)$: the field inside and outside, exact via spherical harmonics.
 
-**Tools:** sparse matrices, LU and Cholesky, Jacobi, Seidel and conjugate-gradient iterations, the condition number, the idea of the multigrid method.
+**Tools:** sparse matrices, LU and Cholesky, Jacobi, Gauss–Seidel and conjugate gradient iterations, the multipole expansion, $Y_{\ell m}$, Gauss–Legendre quadrature.
+
+**Lead author:** Kirill Bazarov.
 
 <div class="lecture-links">
 <span class="lecture-link-pending">in preparation</span>
@@ -125,13 +149,15 @@ A finite-difference scheme turns the equation into a linear system with $N^2$ un
 </div>
 </details>
 <details class="lecture-row">
-<summary><span class="lecture-index">06</span><span>Heat conduction and diffusion</span></summary>
+<summary><span class="lecture-index">07</span><span>Diffusion and random forces</span></summary>
 
 <div class="lecture-row-body">
 
-The explicit scheme and its stability condition, the implicit scheme and tridiagonal solver, Crank–Nicolson. Comparison with the Green function; inhomogeneous and nonlinear media; the random walk as the microscopic picture.
+Cooling of a rod (the reference is the Green function), nonlinear and inhomogeneous media; a Brownian particle under a random force, continuing the random walk of lecture 1.
 
-**Tools:** von Neumann stability analysis, implicit schemes, the tridiagonal (Thomas) algorithm, the method of lines, stiff systems.
+**Tools:** explicit and implicit schemes, von Neumann stability, the tridiagonal (Thomas) algorithm, Crank–Nicolson, the method of lines, the Langevin equation (Euler–Maruyama scheme).
+
+**Lead author:** Kirill Bazarov.
 
 <div class="lecture-links">
 <span class="lecture-link-pending">in preparation</span>
@@ -140,13 +166,15 @@ The explicit scheme and its stability condition, the implicit scheme and tridiag
 </div>
 </details>
 <details class="lecture-row">
-<summary><span class="lecture-index">07</span><span>Waves and the telegraph equation</span></summary>
+<summary><span class="lecture-index">08</span><span>Waves and the telegraph equation</span></summary>
 
 <div class="lecture-row-body">
 
-The wave equation, the CFL condition, numerical dispersion and dissipation; upwind, Lax–Wendroff and leapfrog schemes. The telegraph equation as a bridge between waves and diffusion.
+A string (the reference is d'Alembert's solution) and a lossy transmission line (Heaviside's signal): the third type of equation after Poisson and heat conduction.
 
-**Tools:** the method of characteristics, the CFL condition, numerical dispersion, absorbing boundary conditions.
+**Tools:** characteristics, the Courant condition, numerical dispersion, absorbing boundaries.
+
+**Lead author:** Dmitry V. Naumov.
 
 <div class="lecture-links">
 <span class="lecture-link-pending">in preparation</span>
@@ -155,13 +183,15 @@ The wave equation, the CFL condition, numerical dispersion and dissipation; upwi
 </div>
 </details>
 <details class="lecture-row">
-<summary><span class="lecture-index">08</span><span>Fourier analysis: frequencies in a signal and spectral solution of equations</span></summary>
+<summary><span class="lecture-index">09</span><span>Fourier analysis and the FFT</span></summary>
 
 <div class="lecture-row-body">
 
-The DFT and FFT, aliasing, spectral leakage and windows, the convolution theorem, spectral differentiation and exponential accuracy, the Gibbs phenomenon.
+Frequencies in a noisy signal; solving the diffusion and wave equations in Fourier space; the momentum representation in quantum mechanics.
 
-**Tools:** the FFT, windows, convolution via the FFT, spectral derivatives, dealiasing.
+**Tools:** the FFT, aliasing, windows, convolution, spectral derivatives.
+
+**Lead author:** Kirill Bazarov.
 
 <div class="lecture-links">
 <span class="lecture-link-pending">in preparation</span>
@@ -169,16 +199,17 @@ The DFT and FFT, aliasing, spectral leakage and windows, the convolution theorem
 
 </div>
 </details>
-
 <p class="course-kicker">Part III. Quantum mechanics</p>
 <details class="lecture-row">
-<summary><span class="lecture-index">09</span><span>The Schrödinger equation: energy levels</span></summary>
+<summary><span class="lecture-index">10</span><span>Stationary quantum mechanics</span></summary>
 
 <div class="lecture-row-body">
 
-The Hamiltonian as a matrix (finite differences and a basis), shooting and the Numerov method, convergence of levels, the variational principle.
+The oscillator (reference), the anharmonic oscillator, the double well, the hydrogen atom; scattering on a barrier.
 
-**Tools:** diagonalization of tridiagonal matrices, shooting and root finding, the Numerov method, convergence of levels.
+**Tools:** the Hamiltonian as a matrix, shooting, Numerov, the variational method, the transmission coefficient, convergence of levels.
+
+**Lead author:** Kirill Bazarov.
 
 <div class="lecture-links">
 <span class="lecture-link-pending">in preparation</span>
@@ -187,13 +218,15 @@ The Hamiltonian as a matrix (finite differences and a basis), shooting and the N
 </div>
 </details>
 <details class="lecture-row">
-<summary><span class="lecture-index">10</span><span>Quantum evolution: wave packets, tunnelling, neutrino oscillations</span></summary>
+<summary><span class="lecture-index">11</span><span>Quantum evolution and neutrino oscillations</span></summary>
 
 <div class="lecture-row-body">
 
-Crank–Nicolson (unitarity), operator splitting (split-step) with the FFT, the matrix exponential and expansion in eigenvectors, adiabaticity.
+Wave packets and tunnelling; $2\nu$ oscillations (exact) and $3\nu$ oscillations in matter of varying density.
 
-**Tools:** split-step Fourier, the matrix exponential (expm), unitarity as a test, the adiabatic limit.
+**Tools:** Crank–Nicolson and unitarity, split-step with the FFT, the matrix exponential (`expm`).
+
+**Lead author:** Dmitry V. Naumov.
 
 <div class="lecture-links">
 <span class="lecture-link-pending">in preparation</span>
@@ -201,31 +234,17 @@ Crank–Nicolson (unitarity), operator splitting (split-step) with the FFT, the 
 
 </div>
 </details>
-
-<p class="course-kicker">Part IV. The Universe and data</p>
+<p class="course-kicker">Part IV. Data and statistical physics</p>
 <details class="lecture-row">
-<summary><span class="lecture-index">11</span><span>Cosmology: the expansion of the Universe and «freeze-out»</span></summary>
+<summary><span class="lecture-index">12</span><span>Interpolation and approximation</span></summary>
 
 <div class="lecture-row-body">
 
-Only a minimum of cosmology is needed: Hubble's law and the Friedmann equation, which reads as energy conservation (by analogy with lectures 2–3). The age of the Universe and distances through quadratures, root finding, fitting the Hubble diagram. A simple stiff problem: relaxation to equilibrium that the expansion «freezes» — explicit and implicit methods.
+Reconstruct a function from points when the function itself is known (the reference), and see why more nodes are not always better.
 
-**Tools:** numerical integration (rectangles, trapezoids, Simpson, Gauss) and the order of convergence, root finding (bisection, Newton), `curve_fit`, stiffness and the implicit Euler method.
+**Tools:** the Lagrange polynomial, the Runge phenomenon, Chebyshev nodes, splines, least squares, the danger of extrapolation.
 
-<div class="lecture-links">
-<span class="lecture-link-pending">in preparation</span>
-</div>
-
-</div>
-</details>
-<details class="lecture-row">
-<summary><span class="lecture-index">12</span><span>Functions on the sphere: multipoles and sky maps</span></summary>
-
-<div class="lecture-row-body">
-
-Legendre polynomials and spherical harmonics, the addition theorem, Gauss–Legendre quadrature in $\cos\theta$, expansion of a map on a sphere and the power spectrum $C_\ell$. Gauss nodes as an eigenvalue problem (lecture 4).
-
-**Tools:** $Y_{\ell m}$, Gauss–Legendre quadrature, stability of recurrence relations, analysis and synthesis of a map.
+**Lead author:** Kirill Bazarov.
 
 <div class="lecture-links">
 <span class="lecture-link-pending">in preparation</span>
@@ -234,30 +253,15 @@ Legendre polynomials and spherical harmonics, the addition theorem, Gauss–Lege
 </div>
 </details>
 <details class="lecture-row">
-<summary><span class="lecture-index">13</span><span>Inverse problems: the reactor antineutrino spectrum and the SVD</span></summary>
+<summary><span class="lecture-index">13</span><span>Monte Carlo in statistical physics: the Ising model</span></summary>
 
 <div class="lecture-row-body">
 
-The singular value decomposition, the condition number, the pseudo-inverse, truncated SVD and Tikhonov regularization, best low-rank approximation. Convolution with the detector resolution and its inversion through the FFT (lecture 8).
+The two-dimensional Ising model: the phase transition, the critical temperature and thermodynamic quantities; the reference is Onsager's exact solution.
 
-**Tools:** the SVD, the pseudo-inverse, regularization, low rank; the Cholesky factorization for generating correlated errors (link to the statistics course).
+**Tools:** the Metropolis algorithm, autocorrelation and errors, finite-size effects, heat capacity and susceptibility, Numba acceleration.
 
-<div class="lecture-links">
-<span class="lecture-link-pending">in preparation</span>
-</div>
-
-</div>
-</details>
-
-<p class="course-kicker">Part V. Flows, transport and large computations</p>
-<details class="lecture-row">
-<summary><span class="lecture-index">14</span><span>Hydrodynamics I: conservation laws and shock waves</span></summary>
-
-<div class="lecture-row-body">
-
-Conservative form, the finite-volume method, Lax–Friedrichs and Godunov fluxes, numerical viscosity, flux limiters (TVD), the CFL condition.
-
-**Tools:** conservative schemes, finite volumes, the Riemann problem, flux limiters.
+**Lead author:** Kirill Bazarov.
 
 <div class="lecture-links">
 <span class="lecture-link-pending">in preparation</span>
@@ -266,13 +270,33 @@ Conservative form, the finite-volume method, Lax–Friedrichs and Godunov fluxes
 </div>
 </details>
 <details class="lecture-row">
-<summary><span class="lecture-index">15</span><span>Hydrodynamics II: vortices and two-dimensional turbulence</span></summary>
+<summary><span class="lecture-index">14</span><span>Inverse problems: the reactor antineutrino spectrum and the SVD</span></summary>
 
 <div class="lecture-row-body">
 
-The vorticity equation and the stream function, solving the Poisson equation with the FFT, the pseudo-spectral method and dealiasing, the Reynolds number and grid resolution, acceleration with Numba.
+The positron spectrum is measured, the antineutrino spectrum is needed: a response matrix with detector resolution and its inversion.
 
-**Tools:** the pseudo-spectral method, the 2/3 rule, time integration, reuse of the Poisson solver and FFT from lectures 5 and 8.
+**Tools:** the singular value decomposition, the condition number, the pseudo-inverse, truncated SVD and Tikhonov regularization, deconvolution.
+
+**Lead author:** Dmitry V. Naumov.
+
+<div class="lecture-links">
+<span class="lecture-link-pending">in preparation</span>
+</div>
+
+</div>
+</details>
+<p class="course-kicker">Part V. Flows, transport and machine learning</p>
+<details class="lecture-row">
+<summary><span class="lecture-index">15</span><span>Hydrodynamics: shock waves and vortices</span></summary>
+
+<div class="lecture-row-body">
+
+The Burgers equation (the reference is the Hopf–Cole solution), the Sod shock tube (a Riemann problem); briefly, Taylor–Green vortices.
+
+**Tools:** conservative schemes, finite volumes, the Godunov scheme, limiters, the pseudo-spectral method.
+
+**Lead author:** Dmitry V. Naumov.
 
 <div class="lecture-links">
 <span class="lecture-link-pending">in preparation</span>
@@ -285,9 +309,11 @@ The vorticity equation and the stream function, solving the Poisson equation wit
 
 <div class="lecture-row-body">
 
-The collision integral, the mean free path, the transport problem. Methods: Monte Carlo (the random walk of a photon), the diffusion approximation, expansion in angular moments (lecture 12). Comparison of cost and accuracy.
+A photon in a turbid medium: ballistics, diffusion (lecture 7), finite speed (lecture 8). The example is light in Lake Baikal and a neutrino telescope.
 
-**Tools:** Monte Carlo for transport (sampling free paths and angles), the $1/\sqrt N$ error, the diffusion approximation, $P_N$.
+**Tools:** Monte Carlo for transport, the diffusion approximation, expansion in angular moments ($P_N$).
+
+**Lead author:** Dmitry V. Naumov.
 
 <div class="lecture-links">
 <span class="lecture-link-pending">in preparation</span>
@@ -296,13 +322,15 @@ The collision integral, the mean free path, the transport problem. Methods: Mont
 </div>
 </details>
 <details class="lecture-row">
-<summary><span class="lecture-index">17</span><span>Fast computations and verification: from a prototype to production code</span></summary>
+<summary><span class="lecture-index">17</span><span>Machine learning for differential equations</span></summary>
 
 <div class="lecture-row-body">
 
-Profiling, vectorization and Numba, reuse of computations (caching, low rank from lecture 13), tests on analytic limits, the method of manufactured solutions, error budgets.
+The oscillator and the heat equation with known solutions: what a neural network gives and what it costs compared with classical methods.
 
-**Tools:** profiling, Numba (njit, parallel, the risks of fastmath), caching, regression and convergence tests.
+**Tools:** a neural network as an approximator, physics-informed networks (PINN), comparison with classical methods in accuracy and cost.
+
+**Lead author:** Kirill Bazarov.
 
 <div class="lecture-links">
 <span class="lecture-link-pending">in preparation</span>

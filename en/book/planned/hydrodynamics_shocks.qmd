@@ -1,12 +1,12 @@
 ---
-title: "Hydrodynamics I: conservation laws and shock waves"
-description: "Conservative form, the finite-volume method, Lax–Friedrichs and Godunov fluxes, numerical viscosity, flux limiters (TVD), the CFL condition."
+title: "Hydrodynamics: shock waves and vortices"
+description: "The Burgers equation (the reference is the Hopf–Cole solution), the Sod shock tube (a Riemann problem); briefly, Taylor–Green vortices."
 ---
 
 ::: {.chapter-opening}
 <span>Abstract</span>
 
-Conservative form, the finite-volume method, Lax–Friedrichs and Godunov fluxes, numerical viscosity, flux limiters (TVD), the CFL condition.
+The Burgers equation (the reference is the Hopf–Cole solution), the Sod shock tube (a Riemann problem); briefly, Taylor–Green vortices.
 
 Chapter in preparation.
 :::

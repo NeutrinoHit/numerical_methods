@@ -27,32 +27,32 @@ book:
     #   - part: "Подготовка"
     #     chapters:
     #       - chapters/01_python_numpy_numba.qmd
-    #   - part: "I. Движение и колебания"
+    #   - part: "I. Уравнения, матрицы, движение"
     #     chapters:
-    #       - chapters/02_pendulum_and_errors.qmd
-    #       - chapters/03_chaos_double_pendulum.qmd
+    #       - chapters/02_roots_and_quadratures.qmd
+    #       - chapters/03_pendulum_and_errors.qmd
     #       - chapters/04_coupled_oscillators.qmd
+    #       - chapters/05_chaos_double_pendulum.qmd
     #   - part: "II. Поля, диффузия и волны"
     #     chapters:
-    #       - chapters/05_electrostatics_poisson.qmd
-    #       - chapters/06_heat_equation.qmd
-    #       - chapters/07_telegraph_and_waves.qmd
-    #       - chapters/08_fourier_and_fft.qmd
+    #       - chapters/06_electrostatics_poisson.qmd
+    #       - chapters/07_heat_equation.qmd
+    #       - chapters/08_telegraph_and_waves.qmd
+    #       - chapters/09_fourier_and_fft.qmd
     #   - part: "III. Квантовая механика"
     #     chapters:
-    #       - chapters/09_schrodinger_stationary.qmd
-    #       - chapters/10_schrodinger_dynamics_neutrinos.qmd
-    #   - part: "IV. Космос и данные"
+    #       - chapters/10_schrodinger_stationary.qmd
+    #       - chapters/11_schrodinger_dynamics_neutrinos.qmd
+    #   - part: "IV. Данные и статистическая физика"
     #     chapters:
-    #       - chapters/11_cosmology.qmd
-    #       - chapters/12_sphere_and_multipoles.qmd
-    #       - chapters/13_inverse_problems_svd.qmd
-    #   - part: "V. Течения, перенос и большие расчёты"
+    #       - chapters/12_interpolation_and_approximation.qmd
+    #       - chapters/13_ising_monte_carlo.qmd
+    #       - chapters/14_inverse_problems_svd.qmd
+    #   - part: "V. Течения, перенос и машинное обучение"
     #     chapters:
-    #       - chapters/14_hydrodynamics_shocks.qmd
-    #       - chapters/15_hydrodynamics_vortices.qmd
+    #       - chapters/15_hydrodynamics_shocks.qmd
     #       - chapters/16_radiative_transfer.qmd
-    #       - chapters/17_fast_codes_and_verification.qmd
+    #       - chapters/17_machine_learning_odes.qmd
 
 bibliography: ../../shared/bib/references.bib
 csl: ../../shared/bib/neutrinohit-numeric.csl
@@ -64,11 +64,11 @@ jupyter: python3
 
 book-part-titles:
   - "Подготовка"
-  - "I. Движение и колебания"
+  - "I. Уравнения, матрицы, движение"
   - "II. Поля, диффузия и волны"
   - "III. Квантовая механика"
-  - "IV. Космос и данные"
-  - "V. Течения, перенос и большие расчёты"
+  - "IV. Данные и статистическая физика"
+  - "V. Течения, перенос и машинное обучение"
 
 filters:
   - assets/filters/chapter-bibliographies.lua

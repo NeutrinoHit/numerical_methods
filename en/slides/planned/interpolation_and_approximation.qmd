@@ -1,0 +1,44 @@
+---
+title: "Interpolation and approximation"
+subtitle: "Numerical Methods for Physicists"
+author: "Kirill Bazarov, Dmitry V. Naumov"
+format: revealjs
+---
+
+## Lecture outline (draft)
+
+- **Problem:** Reconstruct a function from points when the function itself is known (the reference), and see why more nodes are not always better.
+- **Tools:** the Lagrange polynomial, the Runge phenomenon, Chebyshev nodes, splines, least squares, the danger of extrapolation.
+- **Lead author:** Kirill Bazarov.
+
+::: {.takeaway}
+Lecture in preparation.
+:::
+
+# Physical problem
+
+## Setting
+
+# Analytic reference point
+
+## What is solved exactly
+
+## Where analytics ends
+
+# Numerical method
+
+## The idea
+
+## Accuracy, stability, cost
+
+# Code and experiments
+
+## Implementation in Python
+
+## Pitfalls
+
+# Summary
+
+## What we take with us
+
+## Exercises

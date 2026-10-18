@@ -1,16 +1,15 @@
 ---
 title: "Inverse problems: the reactor antineutrino spectrum and the SVD"
 subtitle: "Numerical Methods for Physicists"
-author: "Dmitry V. Naumov"
+author: "Dmitry V. Naumov, Kirill Bazarov"
 format: revealjs
 ---
 
 ## Lecture outline (draft)
 
-The singular value decomposition, the condition number, the pseudo-inverse, truncated SVD and Tikhonov regularization, best low-rank approximation. Convolution with the detector resolution and its inversion through the FFT (lecture 8).
-
-- **Problem:** A reactor experiment (like Daya Bay or JUNO): the spectrum of positrons from inverse beta decay is measured, but the antineutrino spectrum is needed. The measured spectrum is the response matrix (cross section, kinematics, energy resolution) applied to the true spectrum. Naive inversion amplifies noise; the reference is a known true spectrum in a model experiment.
-- **Tools:** the SVD, the pseudo-inverse, regularization, low rank; the Cholesky factorization for generating correlated errors (link to the statistics course).
+- **Problem:** The positron spectrum is measured, the antineutrino spectrum is needed: a response matrix with detector resolution and its inversion.
+- **Tools:** the singular value decomposition, the condition number, the pseudo-inverse, truncated SVD and Tikhonov regularization, deconvolution.
+- **Lead author:** Dmitry V. Naumov.
 
 ::: {.takeaway}
 Lecture in preparation.
@@ -42,7 +41,7 @@ Lecture in preparation.
 
 ## How it works in LightHit
 
-The POD basis of a shower — compression of reusable computations (lecture 17).
+The POD basis of a shower: low rank and compression of reusable computations.
 
 # Summary
 

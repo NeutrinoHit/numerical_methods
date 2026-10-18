@@ -1,0 +1,44 @@
+---
+title: "Roots and quadratures"
+subtitle: "Numerical Methods for Physicists"
+author: "Kirill Bazarov, Dmitry V. Naumov"
+format: revealjs
+---
+
+## Lecture outline (draft)
+
+- **Problem:** The period of a pendulum at large amplitude (an elliptic integral) and the energy levels of a finite well (a transcendental equation): the exact answer is known, and one sees how numerical methods converge to it.
+- **Tools:** bisection, Newton's method, secants; rectangles, trapezoids, Simpson, Gaussian quadrature; order of convergence, singular integrands.
+- **Lead author:** Kirill Bazarov.
+
+::: {.takeaway}
+Lecture in preparation.
+:::
+
+# Physical problem
+
+## Setting
+
+# Analytic reference point
+
+## What is solved exactly
+
+## Where analytics ends
+
+# Numerical method
+
+## The idea
+
+## Accuracy, stability, cost
+
+# Code and experiments
+
+## Implementation in Python
+
+## Pitfalls
+
+# Summary
+
+## What we take with us
+
+## Exercises
