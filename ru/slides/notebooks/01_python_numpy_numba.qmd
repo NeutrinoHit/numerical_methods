@@ -314,6 +314,76 @@ print(f"Numba, n=1e8: pi ~ {est:.6f}, ошибка {est - np.pi:+.6f}, врем�
 счёта, код использует объекты, которых Numba не знает (словари произвольных
 типов, pandas, большинство функций SciPy).
 
+# Дублет натрия: матрица гамильтониана
+
+```{python}
+#| label: ham-matrix
+# базис |m_l, m_s>: 6 состояний 3p-электрона (l=1, s=1/2)
+basis = [(ml, ms) for ml in (1, 0, -1) for ms in (0.5, -0.5)]
+
+def hamiltonian(zeta, B):
+    """H = zeta * L·S + B * (Lz + 2 Sz) в базисе |m_l, m_s>."""
+    n = len(basis)
+    H = np.zeros((n, n))
+    for i, (ml, ms) in enumerate(basis):
+        # диагональ: Lz Sz (спин-орбита) + зеемановский член
+        H[i, i] = zeta * ml * ms + B * (ml + 2 * ms)
+        # L·S = Lz Sz + (L+ S- + L- S+)/2:
+        # L+ S- связывает (ml, +1/2) с (ml+1, -1/2), сохраняя m_j = ml + ms
+        if ms == 0.5 and ml + 1 <= 1:
+            j = basis.index((ml + 1, -0.5))
+            l_plus = np.sqrt(2 - ml * (ml + 1))   # L+ |l, ml>
+            H[i, j] = H[j, i] = 0.5 * zeta * l_plus
+    return H
+```
+
+## Собственные значения как функция поля
+
+```{python}
+#| label: zeeman-levels
+def zeeman_curves(zeta, Bs):
+    E = np.array([np.linalg.eigvalsh(hamiltonian(zeta, B)) for B in Bs])
+    return np.sort(E, axis=1)
+
+zeta = 1.0
+Bs = np.linspace(0, 4, 200)
+E = zeeman_curves(zeta, Bs)
+```
+
+## Сравнение: точное решение и асимптотики
+
+```{python}
+#| label: fig-zeeman
+#| fig-cap: "Уровни дублета натрия в поле: точное решение (чёрные) и асимптотики слабого и сильного поля (пунктир)."
+fig, ax = plt.subplots()
+
+# точные ветви
+ax.plot(Bs, E[:, 0], color="black", lw=1.5, label="точное решение")
+ax.plot(Bs, E[:, 1:], color="black", lw=1.5)
+
+# слабое поле: E = E_j + g_J B m_j, касательные у B=0
+weak = [(-zeta, 2/3, [-0.5, 0.5]),
+        ( zeta/2, 4/3, [-1.5, -0.5, 0.5, 1.5])]
+first = True
+for E0, g, mjs in weak:
+    for mj in mjs:
+        ax.plot(Bs, E0 + g * Bs * mj, "--", color="C0", lw=2.0,
+                label=(r"слабое поле: $g_J B m_j$" if first else None))
+        first = False
+
+# сильное поле: E = B(m_l + 2 m_s) + zeta m_l m_s
+first = True
+for ml, ms in basis:
+    ax.plot(Bs, Bs * (ml + 2 * ms) + zeta * ml * ms, "--", color="C3", lw=2.0,
+            label=(r"сильное поле: $B(m_\ell + 2 m_s)$" if first else None))
+    first = False
+
+ax.set_xlabel("B"); ax.set_ylabel("E")
+ax.set_xlim(0, 4); ax.set_ylim(-5, 7)
+ax.legend(loc="upper left")
+plt.show()
+```
+
 # Итоги
 
 - Массив NumPy — блок памяти с формой и типом; операции над массивом
